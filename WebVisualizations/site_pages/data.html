@@ -6,23 +6,25 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Latitude Analysis - Data</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+  <link rel = "stylesheet" type="text/css" href = "../assets/style/global.css">
+  <link rel = "stylesheet" type="text/css" href = "../assets/style/data.css">
 </head>
 <body class="bg-secondary">
 
   <div class="d-flex bd-highlight mb-3 align-items-center bg-light">
     <!-- Latitude Header for every page -->
     <div class="me-auto p-2 bd-highlight">
-      <H3 class="p-3 mb-2 bg-info text-white">Latitude</H3>
+      <H3 class="p-3 mb-2 text-white tag">Latitude</H3>
     </div>
     
     <!-- This defines the nav bar, should be located on every page -->
     <ul class="nav nav-tabs fs-3 justify-content-end">
       <li class="nav-item">
-        <a class="nav-link align-middle" aria-current="page" href="../../index.html">Home</a>
+        <a class="nav-link align-middle navbarstyle" aria-current="page" href="../../index.html">Home</a>
       </li>
       <li class="nav-item dropdown"> 
         <!-- Not sure if there needs to be a landing page for all of the visualizations -->
-        <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Visualizations</a>
+        <a class="nav-link dropdown-toggle navbarstyle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Visualizations</a>
         <ul class="dropdown-menu">
           <li><a class="dropdown-item" href="visualizations/max_temperature.html">Max Temperature</a></li>
           <li><a class="dropdown-item" href="visualizations/humidity.html">Humidity</a></li>
@@ -31,18 +33,18 @@
         </ul>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="comparison.html">Comparisons</a>
+        <a class="nav-link navbarstyle" href="comparison.html">Comparisons</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link active" href="#">Data</a>
+        <a class="nav-link navbarstyle active" href="#">Data</a>
       </li>
     </ul>
 
   </div>
       
-  <main>
-    <section class="bg-light">
-      <H2>Data</H2>
+  <main class="dataarea">
+    <section>
+      <H2 class="headerstyle">Data</H2>
       <hr>
       <!-- REPLACE THIS LATER WITH YOUR ANALYSIS -->
       <p> The following table includes all of the data used for plotting during this project:</p>
@@ -50,22 +52,25 @@
       <!-- Display main visualizations here in a grid -->
     </section>
 
-    <div class="table-responsive bg-light">
-
-      <table border="1" class="table table-hover">
-        <thead class="table-dark">
-          <th>City</th>
-          <th>Lat</th>
-          <th>Lng</th>
-          <th>Max Temp</th>
-          <th>Humidity</th>
-          <th>Cloudiness</th>
-          <th>Wind Speed</th>
-          <th>Country</th>
-          <th>Date</th>
+    <section class="table-responsive bg-light">
+      <table border="1" class="dataframe table table-hover">
+        <thead class="dataheader">
+          <tr>
+            <th></th>
+            <th>City</th>
+            <th>Lat</th>
+            <th>Lng</th>
+            <th>Max Temp</th>
+            <th>Humidity</th>
+            <th>Cloudiness</th>
+            <th>Wind Speed</th>
+            <th>Country</th>
+            <th>Date</th>
+          </tr>
         </thead>
         <tbody>
           <tr>
+            <th>0</th>
             <td>Kaitangata</td>
             <td>-46.2817</td>
             <td>169.8464</td>
@@ -77,6 +82,7 @@
             <td>1618316230</td>
           </tr>
           <tr>
+            <th>1</th>
             <td>Staryy Nadym</td>
             <td>65.6118</td>
             <td>72.6842</td>
@@ -88,20 +94,22 @@
             <td>1618316230</td>
           </tr>
           <tr>
+            <th>2</th>
             <td>Merritt</td>
             <td>50.1123</td>
             <td>-120.7942</td>
-            <td>28.4</td>
+            <td>28.40</td>
             <td>86</td>
             <td>1</td>
-            <td>2.3</td>
+            <td>2.30</td>
             <td>CA</td>
             <td>1618316230</td>
           </tr>
           <tr>
+            <th>3</th>
             <td>Lavrentiya</td>
             <td>65.5833</td>
-            <td>-171</td>
+            <td>-171.0000</td>
             <td>18.82</td>
             <td>95</td>
             <td>100</td>
@@ -110,17 +118,19 @@
             <td>1618316231</td>
           </tr>
           <tr>
+            <th>4</th>
             <td>Hobart</td>
             <td>-42.8794</td>
             <td>147.3294</td>
-            <td>55.4</td>
+            <td>55.40</td>
             <td>82</td>
             <td>90</td>
-            <td>11.5</td>
+            <td>11.50</td>
             <td>AU</td>
             <td>1618316231</td>
           </tr>
           <tr>
+            <th>5</th>
             <td>Rikitea</td>
             <td>-23.1203</td>
             <td>-134.9692</td>
@@ -132,21 +142,23 @@
             <td>1618316232</td>
           </tr>
           <tr>
+            <th>6</th>
             <td>Arraial do Cabo</td>
             <td>-22.9661</td>
             <td>-42.0278</td>
-            <td>78.8</td>
+            <td>78.80</td>
             <td>65</td>
             <td>75</td>
-            <td>11.5</td>
+            <td>11.50</td>
             <td>BR</td>
             <td>1618316232</td>
           </tr>
           <tr>
+            <th>7</th>
             <td>Avarua</td>
             <td>-21.2078</td>
-            <td>-159.775</td>
-            <td>71.6</td>
+            <td>-159.7750</td>
+            <td>71.60</td>
             <td>94</td>
             <td>20</td>
             <td>3.44</td>
@@ -154,6 +166,7 @@
             <td>1618316232</td>
           </tr>
           <tr>
+            <th>8</th>
             <td>Tuktoyaktuk</td>
             <td>69.4541</td>
             <td>-133.0374</td>
@@ -165,10 +178,11 @@
             <td>1618316233</td>
           </tr>
           <tr>
+            <th>9</th>
             <td>Faanui</td>
             <td>-16.4833</td>
-            <td>-151.75</td>
-            <td>80.2</td>
+            <td>-151.7500</td>
+            <td>80.20</td>
             <td>67</td>
             <td>100</td>
             <td>3.22</td>
@@ -176,6 +190,7 @@
             <td>1618316233</td>
           </tr>
           <tr>
+            <th>10</th>
             <td>Tiksi</td>
             <td>71.6872</td>
             <td>128.8694</td>
@@ -187,10 +202,11 @@
             <td>1618316233</td>
           </tr>
           <tr>
+            <th>11</th>
             <td>Kapaa</td>
             <td>22.0752</td>
-            <td>-159.319</td>
-            <td>69.8</td>
+            <td>-159.3190</td>
+            <td>69.80</td>
             <td>73</td>
             <td>75</td>
             <td>6.91</td>
@@ -198,10 +214,11 @@
             <td>1618316234</td>
           </tr>
           <tr>
+            <th>12</th>
             <td>Norman Wells</td>
-            <td>65.282</td>
+            <td>65.2820</td>
             <td>-126.8329</td>
-            <td>14</td>
+            <td>14.00</td>
             <td>62</td>
             <td>40</td>
             <td>5.75</td>
@@ -209,9 +226,10 @@
             <td>1618316234</td>
           </tr>
           <tr>
+            <th>13</th>
             <td>Agadez</td>
-            <td>19.75</td>
-            <td>10.25</td>
+            <td>19.7500</td>
+            <td>10.2500</td>
             <td>101.16</td>
             <td>5</td>
             <td>0</td>
@@ -220,10 +238,11 @@
             <td>1618316235</td>
           </tr>
           <tr>
+            <th>14</th>
             <td>Port Elizabeth</td>
-            <td>-33.918</td>
+            <td>-33.9180</td>
             <td>25.5701</td>
-            <td>71.6</td>
+            <td>71.60</td>
             <td>83</td>
             <td>20</td>
             <td>9.22</td>
@@ -231,21 +250,23 @@
             <td>1618316235</td>
           </tr>
           <tr>
+            <th>15</th>
             <td>Mossamedes</td>
             <td>-15.1961</td>
             <td>12.1522</td>
-            <td>89.6</td>
+            <td>89.60</td>
             <td>62</td>
             <td>20</td>
-            <td>11.5</td>
+            <td>11.50</td>
             <td>AO</td>
             <td>1618316235</td>
           </tr>
           <tr>
+            <th>16</th>
             <td>Albany</td>
             <td>42.6001</td>
             <td>-73.9662</td>
-            <td>46</td>
+            <td>46.00</td>
             <td>86</td>
             <td>86</td>
             <td>2.91</td>
@@ -253,10 +274,11 @@
             <td>1618316236</td>
           </tr>
           <tr>
+            <th>17</th>
             <td>Athabasca</td>
             <td>54.7169</td>
             <td>-113.2854</td>
-            <td>19.4</td>
+            <td>19.40</td>
             <td>86</td>
             <td>0</td>
             <td>1.14</td>
@@ -264,6 +286,7 @@
             <td>1618316236</td>
           </tr>
           <tr>
+            <th>18</th>
             <td>Banda Aceh</td>
             <td>5.5577</td>
             <td>95.3222</td>
@@ -275,10 +298,11 @@
             <td>1618316237</td>
           </tr>
           <tr>
+            <th>19</th>
             <td>Pontianak</td>
             <td>-0.0333</td>
             <td>109.3333</td>
-            <td>77</td>
+            <td>77.00</td>
             <td>94</td>
             <td>75</td>
             <td>0.69</td>
@@ -286,6 +310,7 @@
             <td>1618316111</td>
           </tr>
           <tr>
+            <th>20</th>
             <td>New Norfolk</td>
             <td>-42.7826</td>
             <td>147.0587</td>
@@ -297,10 +322,11 @@
             <td>1618316237</td>
           </tr>
           <tr>
+            <th>21</th>
             <td>Thompson</td>
             <td>55.7435</td>
             <td>-97.8558</td>
-            <td>12.2</td>
+            <td>12.20</td>
             <td>67</td>
             <td>75</td>
             <td>12.66</td>
@@ -308,6 +334,7 @@
             <td>1618316238</td>
           </tr>
           <tr>
+            <th>22</th>
             <td>Nanortalik</td>
             <td>60.1432</td>
             <td>-45.2371</td>
@@ -319,9 +346,10 @@
             <td>1618316238</td>
           </tr>
           <tr>
+            <th>23</th>
             <td>Zhukovo</td>
             <td>55.0318</td>
-            <td>36.744</td>
+            <td>36.7440</td>
             <td>71.01</td>
             <td>30</td>
             <td>40</td>
@@ -330,6 +358,7 @@
             <td>1618316239</td>
           </tr>
           <tr>
+            <th>24</th>
             <td>Kavieng</td>
             <td>-2.5744</td>
             <td>150.7967</td>
@@ -341,10 +370,11 @@
             <td>1618316239</td>
           </tr>
           <tr>
+            <th>25</th>
             <td>Redmond</td>
-            <td>47.674</td>
+            <td>47.6740</td>
             <td>-122.1215</td>
-            <td>43</td>
+            <td>43.00</td>
             <td>79</td>
             <td>0</td>
             <td>3.96</td>
@@ -352,17 +382,19 @@
             <td>1618316052</td>
           </tr>
           <tr>
+            <th>26</th>
             <td>Hermanus</td>
             <td>-34.4187</td>
             <td>19.2345</td>
-            <td>82</td>
+            <td>82.00</td>
             <td>42</td>
             <td>37</td>
-            <td>3</td>
+            <td>3.00</td>
             <td>ZA</td>
             <td>1618316240</td>
           </tr>
           <tr>
+            <th>27</th>
             <td>Sabang</td>
             <td>5.8933</td>
             <td>95.3214</td>
@@ -374,10 +406,11 @@
             <td>1618316240</td>
           </tr>
           <tr>
+            <th>28</th>
             <td>Ushuaia</td>
-            <td>-54.8</td>
-            <td>-68.3</td>
-            <td>42.8</td>
+            <td>-54.8000</td>
+            <td>-68.3000</td>
+            <td>42.80</td>
             <td>61</td>
             <td>40</td>
             <td>29.93</td>
@@ -385,10 +418,11 @@
             <td>1618316176</td>
           </tr>
           <tr>
-            <td>Saint-FranÃ§ois</td>
+            <th>29</th>
+            <td>Saint-François</td>
             <td>46.4154</td>
             <td>3.9054</td>
-            <td>50</td>
+            <td>50.00</td>
             <td>50</td>
             <td>0</td>
             <td>5.75</td>
@@ -396,21 +430,23 @@
             <td>1618316240</td>
           </tr>
           <tr>
+            <th>30</th>
             <td>Eyl</td>
             <td>7.9803</td>
             <td>49.8164</td>
             <td>85.35</td>
             <td>54</td>
             <td>62</td>
-            <td>14.5</td>
+            <td>14.50</td>
             <td>SO</td>
             <td>1618316241</td>
           </tr>
           <tr>
+            <th>31</th>
             <td>Porto-Novo</td>
             <td>6.4965</td>
             <td>2.6036</td>
-            <td>89.6</td>
+            <td>89.60</td>
             <td>66</td>
             <td>40</td>
             <td>10.36</td>
@@ -418,6 +454,7 @@
             <td>1618316242</td>
           </tr>
           <tr>
+            <th>32</th>
             <td>Dingle</td>
             <td>10.9995</td>
             <td>122.6711</td>
@@ -429,21 +466,23 @@
             <td>1618316242</td>
           </tr>
           <tr>
+            <th>33</th>
             <td>Port Augusta</td>
-            <td>-32.5</td>
+            <td>-32.5000</td>
             <td>137.7667</td>
-            <td>73.4</td>
+            <td>73.40</td>
             <td>53</td>
             <td>75</td>
-            <td>13.8</td>
+            <td>13.80</td>
             <td>AU</td>
             <td>1618316242</td>
           </tr>
           <tr>
+            <th>34</th>
             <td>Mar del Plata</td>
             <td>-38.0023</td>
             <td>-57.5575</td>
-            <td>66</td>
+            <td>66.00</td>
             <td>93</td>
             <td>0</td>
             <td>4.61</td>
@@ -451,21 +490,23 @@
             <td>1618316022</td>
           </tr>
           <tr>
+            <th>35</th>
             <td>Lebu</td>
             <td>-37.6167</td>
-            <td>-73.65</td>
-            <td>55.6</td>
+            <td>-73.6500</td>
+            <td>55.60</td>
             <td>90</td>
             <td>1</td>
-            <td>12.8</td>
+            <td>12.80</td>
             <td>CL</td>
             <td>1618316243</td>
           </tr>
           <tr>
+            <th>36</th>
             <td>Hasaki</td>
             <td>35.7333</td>
             <td>140.8333</td>
-            <td>61</td>
+            <td>61.00</td>
             <td>94</td>
             <td>75</td>
             <td>8.05</td>
@@ -473,10 +514,11 @@
             <td>1618316243</td>
           </tr>
           <tr>
-            <td>VardÃ¸</td>
+            <th>37</th>
+            <td>Vardø</td>
             <td>70.3705</td>
             <td>31.1107</td>
-            <td>32</td>
+            <td>32.00</td>
             <td>69</td>
             <td>0</td>
             <td>12.66</td>
@@ -484,6 +526,7 @@
             <td>1618316244</td>
           </tr>
           <tr>
+            <th>38</th>
             <td>Torbay</td>
             <td>47.6666</td>
             <td>-52.7314</td>
@@ -495,21 +538,23 @@
             <td>1618316244</td>
           </tr>
           <tr>
+            <th>39</th>
             <td>Muros</td>
             <td>42.7762</td>
             <td>-9.0603</td>
             <td>57.99</td>
             <td>86</td>
             <td>100</td>
-            <td>3</td>
+            <td>3.00</td>
             <td>ES</td>
             <td>1618316245</td>
           </tr>
           <tr>
+            <th>40</th>
             <td>Katherine</td>
             <td>-14.4667</td>
             <td>132.2667</td>
-            <td>71.6</td>
+            <td>71.60</td>
             <td>68</td>
             <td>16</td>
             <td>3.44</td>
@@ -517,21 +562,23 @@
             <td>1618316245</td>
           </tr>
           <tr>
+            <th>41</th>
             <td>Bluff</td>
-            <td>-46.6</td>
+            <td>-46.6000</td>
             <td>168.3333</td>
             <td>53.01</td>
             <td>97</td>
             <td>62</td>
-            <td>4</td>
+            <td>4.00</td>
             <td>NZ</td>
             <td>1618316245</td>
           </tr>
           <tr>
+            <th>42</th>
             <td>Pevek</td>
             <td>69.7008</td>
             <td>170.3133</td>
-            <td>-19.3</td>
+            <td>-19.30</td>
             <td>100</td>
             <td>62</td>
             <td>4.29</td>
@@ -539,10 +586,11 @@
             <td>1618316246</td>
           </tr>
           <tr>
+            <th>43</th>
             <td>Busselton</td>
-            <td>-33.65</td>
+            <td>-33.6500</td>
             <td>115.3333</td>
-            <td>57</td>
+            <td>57.00</td>
             <td>79</td>
             <td>47</td>
             <td>7.61</td>
@@ -550,10 +598,11 @@
             <td>1618316246</td>
           </tr>
           <tr>
+            <th>44</th>
             <td>Charlottetown</td>
             <td>46.2352</td>
             <td>-63.1267</td>
-            <td>37.4</td>
+            <td>37.40</td>
             <td>93</td>
             <td>90</td>
             <td>23.02</td>
@@ -561,6 +610,7 @@
             <td>1618316106</td>
           </tr>
           <tr>
+            <th>45</th>
             <td>Naze</td>
             <td>28.3667</td>
             <td>129.4833</td>
@@ -572,6 +622,7 @@
             <td>1618316247</td>
           </tr>
           <tr>
+            <th>46</th>
             <td>Samarai</td>
             <td>-10.6167</td>
             <td>150.6667</td>
@@ -583,8 +634,9 @@
             <td>1618316247</td>
           </tr>
           <tr>
+            <th>47</th>
             <td>Hithadhoo</td>
-            <td>-0.6</td>
+            <td>-0.6000</td>
             <td>73.0833</td>
             <td>83.62</td>
             <td>66</td>
@@ -594,10 +646,11 @@
             <td>1618316248</td>
           </tr>
           <tr>
+            <th>48</th>
             <td>Saldanha</td>
             <td>-33.0117</td>
             <td>17.9442</td>
-            <td>82.4</td>
+            <td>82.40</td>
             <td>36</td>
             <td>58</td>
             <td>12.66</td>
@@ -605,10 +658,11 @@
             <td>1618316248</td>
           </tr>
           <tr>
+            <th>49</th>
             <td>George Town</td>
             <td>5.4112</td>
             <td>100.3354</td>
-            <td>84.2</td>
+            <td>84.20</td>
             <td>88</td>
             <td>40</td>
             <td>5.75</td>
@@ -616,21 +670,23 @@
             <td>1618316248</td>
           </tr>
           <tr>
+            <th>50</th>
             <td>Ihlow</td>
             <td>51.8833</td>
             <td>13.3333</td>
             <td>46.99</td>
             <td>53</td>
             <td>75</td>
-            <td>11.5</td>
+            <td>11.50</td>
             <td>DE</td>
             <td>1618316249</td>
           </tr>
           <tr>
+            <th>51</th>
             <td>Hilo</td>
             <td>19.7297</td>
-            <td>-155.09</td>
-            <td>66.2</td>
+            <td>-155.0900</td>
+            <td>66.20</td>
             <td>72</td>
             <td>20</td>
             <td>5.75</td>
@@ -638,7 +694,8 @@
             <td>1618315968</td>
           </tr>
           <tr>
-            <td>KanniyÄkumÄri</td>
+            <th>52</th>
+            <td>Kanniyākumāri</td>
             <td>8.0833</td>
             <td>77.5667</td>
             <td>84.06</td>
@@ -649,6 +706,7 @@
             <td>1618316249</td>
           </tr>
           <tr>
+            <th>53</th>
             <td>Melo</td>
             <td>-32.3667</td>
             <td>-54.1833</td>
@@ -660,6 +718,7 @@
             <td>1618316250</td>
           </tr>
           <tr>
+            <th>54</th>
             <td>Black River</td>
             <td>18.0264</td>
             <td>-77.8487</td>
@@ -671,10 +730,11 @@
             <td>1618316250</td>
           </tr>
           <tr>
+            <th>55</th>
             <td>Wasilla</td>
             <td>61.5814</td>
             <td>-149.4394</td>
-            <td>37.4</td>
+            <td>37.40</td>
             <td>70</td>
             <td>90</td>
             <td>3.44</td>
@@ -682,10 +742,11 @@
             <td>1618316138</td>
           </tr>
           <tr>
+            <th>56</th>
             <td>Grand Gaube</td>
             <td>-20.0064</td>
             <td>57.6608</td>
-            <td>82</td>
+            <td>82.00</td>
             <td>75</td>
             <td>100</td>
             <td>5.01</td>
@@ -693,10 +754,11 @@
             <td>1618316251</td>
           </tr>
           <tr>
+            <th>57</th>
             <td>Yeppoon</td>
             <td>-23.1333</td>
             <td>150.7333</td>
-            <td>68</td>
+            <td>68.00</td>
             <td>68</td>
             <td>0</td>
             <td>6.91</td>
@@ -704,10 +766,11 @@
             <td>1618316251</td>
           </tr>
           <tr>
-            <td>NÄnÄkuli</td>
+            <th>58</th>
+            <td>Nānākuli</td>
             <td>21.3906</td>
             <td>-158.1547</td>
-            <td>68</td>
+            <td>68.00</td>
             <td>77</td>
             <td>1</td>
             <td>3.44</td>
@@ -715,10 +778,11 @@
             <td>1618316252</td>
           </tr>
           <tr>
+            <th>59</th>
             <td>Capaci</td>
             <td>38.1711</td>
             <td>13.2393</td>
-            <td>64</td>
+            <td>64.00</td>
             <td>63</td>
             <td>0</td>
             <td>21.85</td>
@@ -726,8 +790,9 @@
             <td>1618316252</td>
           </tr>
           <tr>
+            <th>60</th>
             <td>Yellowknife</td>
-            <td>62.456</td>
+            <td>62.4560</td>
             <td>-114.3525</td>
             <td>21.99</td>
             <td>79</td>
@@ -737,6 +802,7 @@
             <td>1618316235</td>
           </tr>
           <tr>
+            <th>61</th>
             <td>Dikson</td>
             <td>73.5069</td>
             <td>80.5464</td>
@@ -748,8 +814,9 @@
             <td>1618316253</td>
           </tr>
           <tr>
+            <th>62</th>
             <td>Okato</td>
-            <td>-39.2</td>
+            <td>-39.2000</td>
             <td>173.8833</td>
             <td>53.01</td>
             <td>88</td>
@@ -759,10 +826,11 @@
             <td>1618316253</td>
           </tr>
           <tr>
+            <th>63</th>
             <td>Punta Arenas</td>
-            <td>-53.15</td>
+            <td>-53.1500</td>
             <td>-70.9167</td>
-            <td>39.2</td>
+            <td>39.20</td>
             <td>87</td>
             <td>0</td>
             <td>12.66</td>
@@ -770,6 +838,7 @@
             <td>1618316254</td>
           </tr>
           <tr>
+            <th>64</th>
             <td>Verkhnevilyuysk</td>
             <td>63.4453</td>
             <td>120.3167</td>
@@ -781,6 +850,7 @@
             <td>1618316254</td>
           </tr>
           <tr>
+            <th>65</th>
             <td>Airai</td>
             <td>-8.9266</td>
             <td>125.4092</td>
@@ -792,10 +862,11 @@
             <td>1618316254</td>
           </tr>
           <tr>
+            <th>66</th>
             <td>Cape Town</td>
             <td>-33.9258</td>
             <td>18.4232</td>
-            <td>86</td>
+            <td>86.00</td>
             <td>30</td>
             <td>0</td>
             <td>6.91</td>
@@ -803,10 +874,11 @@
             <td>1618315963</td>
           </tr>
           <tr>
+            <th>67</th>
             <td>Ribeira Grande</td>
             <td>38.5167</td>
-            <td>-28.7</td>
-            <td>66.2</td>
+            <td>-28.7000</td>
+            <td>66.20</td>
             <td>82</td>
             <td>40</td>
             <td>18.41</td>
@@ -814,19 +886,21 @@
             <td>1618316255</td>
           </tr>
           <tr>
+            <th>68</th>
             <td>Mataura</td>
             <td>-46.1927</td>
             <td>168.8643</td>
             <td>53.01</td>
             <td>97</td>
             <td>82</td>
-            <td>4</td>
+            <td>4.00</td>
             <td>NZ</td>
             <td>1618316255</td>
           </tr>
           <tr>
-            <td>BerriozÃ¡bal</td>
-            <td>16.8</td>
+            <th>69</th>
+            <td>Berriozábal</td>
+            <td>16.8000</td>
             <td>-93.2667</td>
             <td>67.03</td>
             <td>61</td>
@@ -836,9 +910,10 @@
             <td>1618316256</td>
           </tr>
           <tr>
+            <th>70</th>
             <td>Port Alfred</td>
             <td>-33.5906</td>
-            <td>26.891</td>
+            <td>26.8910</td>
             <td>78.57</td>
             <td>70</td>
             <td>55</td>
@@ -847,6 +922,7 @@
             <td>1618316230</td>
           </tr>
           <tr>
+            <th>71</th>
             <td>Morondava</td>
             <td>-20.2833</td>
             <td>44.2833</td>
@@ -858,6 +934,7 @@
             <td>1618316256</td>
           </tr>
           <tr>
+            <th>72</th>
             <td>San Rafael</td>
             <td>-34.6177</td>
             <td>-68.3301</td>
@@ -869,10 +946,11 @@
             <td>1618316257</td>
           </tr>
           <tr>
+            <th>73</th>
             <td>Atuona</td>
-            <td>-9.8</td>
+            <td>-9.8000</td>
             <td>-139.0333</td>
-            <td>79.9</td>
+            <td>79.90</td>
             <td>80</td>
             <td>24</td>
             <td>16.62</td>
@@ -880,6 +958,7 @@
             <td>1618316154</td>
           </tr>
           <tr>
+            <th>74</th>
             <td>Castro</td>
             <td>-24.7911</td>
             <td>-50.0119</td>
@@ -891,6 +970,7 @@
             <td>1618316257</td>
           </tr>
           <tr>
+            <th>75</th>
             <td>Codrington</td>
             <td>-38.2667</td>
             <td>141.9667</td>
@@ -902,10 +982,11 @@
             <td>1618316258</td>
           </tr>
           <tr>
+            <th>76</th>
             <td>Coahuayana Viejo</td>
             <td>18.7333</td>
             <td>-103.6833</td>
-            <td>71.6</td>
+            <td>71.60</td>
             <td>60</td>
             <td>1</td>
             <td>8.05</td>
@@ -913,21 +994,23 @@
             <td>1618316258</td>
           </tr>
           <tr>
+            <th>77</th>
             <td>Salalah</td>
             <td>17.0151</td>
             <td>54.0924</td>
-            <td>87.8</td>
+            <td>87.80</td>
             <td>58</td>
             <td>20</td>
-            <td>11.5</td>
+            <td>11.50</td>
             <td>OM</td>
             <td>1618315971</td>
           </tr>
           <tr>
+            <th>78</th>
             <td>Bredasdorp</td>
             <td>-34.5322</td>
             <td>20.0403</td>
-            <td>77</td>
+            <td>77.00</td>
             <td>53</td>
             <td>62</td>
             <td>9.22</td>
@@ -935,10 +1018,11 @@
             <td>1618316259</td>
           </tr>
           <tr>
-            <td>RÃ­o Gallegos</td>
+            <th>79</th>
+            <td>Río Gallegos</td>
             <td>-51.6226</td>
             <td>-69.2181</td>
-            <td>41</td>
+            <td>41.00</td>
             <td>75</td>
             <td>0</td>
             <td>3.44</td>
@@ -946,6 +1030,7 @@
             <td>1618316259</td>
           </tr>
           <tr>
+            <th>80</th>
             <td>Ormara</td>
             <td>25.2088</td>
             <td>64.6357</td>
@@ -957,6 +1042,7 @@
             <td>1618316260</td>
           </tr>
           <tr>
+            <th>81</th>
             <td>Upernavik</td>
             <td>72.7868</td>
             <td>-56.1549</td>
@@ -968,6 +1054,7 @@
             <td>1618316260</td>
           </tr>
           <tr>
+            <th>82</th>
             <td>Nanchang</td>
             <td>28.6833</td>
             <td>115.8833</td>
@@ -979,10 +1066,11 @@
             <td>1618316260</td>
           </tr>
           <tr>
+            <th>83</th>
             <td>Nikolskoye</td>
             <td>59.7035</td>
             <td>30.7861</td>
-            <td>50</td>
+            <td>50.00</td>
             <td>62</td>
             <td>0</td>
             <td>13.42</td>
@@ -990,10 +1078,11 @@
             <td>1618316261</td>
           </tr>
           <tr>
+            <th>84</th>
             <td>Saint Paul Harbor</td>
-            <td>57.79</td>
+            <td>57.7900</td>
             <td>-152.4072</td>
-            <td>35.6</td>
+            <td>35.60</td>
             <td>87</td>
             <td>20</td>
             <td>3.44</td>
@@ -1001,6 +1090,7 @@
             <td>1618316248</td>
           </tr>
           <tr>
+            <th>85</th>
             <td>Carnarvon</td>
             <td>-24.8667</td>
             <td>113.6333</td>
@@ -1012,10 +1102,11 @@
             <td>1618316261</td>
           </tr>
           <tr>
+            <th>86</th>
             <td>Pochutla</td>
             <td>15.7432</td>
             <td>-96.4661</td>
-            <td>72</td>
+            <td>72.00</td>
             <td>87</td>
             <td>0</td>
             <td>1.99</td>
@@ -1023,10 +1114,11 @@
             <td>1618316262</td>
           </tr>
           <tr>
-            <td>MahÃ©bourg</td>
+            <th>87</th>
+            <td>Mahébourg</td>
             <td>-20.4081</td>
-            <td>57.7</td>
-            <td>82.4</td>
+            <td>57.7000</td>
+            <td>82.40</td>
             <td>65</td>
             <td>75</td>
             <td>5.75</td>
@@ -1034,10 +1126,11 @@
             <td>1618316168</td>
           </tr>
           <tr>
+            <th>88</th>
             <td>Vaini</td>
-            <td>-21.2</td>
-            <td>-175.2</td>
-            <td>71.6</td>
+            <td>-21.2000</td>
+            <td>-175.2000</td>
+            <td>71.60</td>
             <td>94</td>
             <td>20</td>
             <td>4.61</td>
@@ -1045,10 +1138,11 @@
             <td>1618316262</td>
           </tr>
           <tr>
+            <th>89</th>
             <td>Molodizhne</td>
             <td>48.1773</td>
             <td>32.6601</td>
-            <td>50</td>
+            <td>50.00</td>
             <td>81</td>
             <td>90</td>
             <td>8.95</td>
@@ -1056,6 +1150,7 @@
             <td>1618316263</td>
           </tr>
           <tr>
+            <th>90</th>
             <td>Bilma</td>
             <td>18.6853</td>
             <td>12.9164</td>
@@ -1067,6 +1162,7 @@
             <td>1618315997</td>
           </tr>
           <tr>
+            <th>91</th>
             <td>Atlantic Beach</td>
             <td>30.3344</td>
             <td>-81.3987</td>
@@ -1078,6 +1174,7 @@
             <td>1618316264</td>
           </tr>
           <tr>
+            <th>92</th>
             <td>Yining</td>
             <td>29.0361</td>
             <td>114.5636</td>
@@ -1089,20 +1186,22 @@
             <td>1618316264</td>
           </tr>
           <tr>
+            <th>93</th>
             <td>Fethiye</td>
             <td>36.6217</td>
             <td>29.1164</td>
-            <td>64.4</td>
+            <td>64.40</td>
             <td>59</td>
             <td>75</td>
-            <td>11.5</td>
+            <td>11.50</td>
             <td>TR</td>
             <td>1618316264</td>
           </tr>
           <tr>
+            <th>94</th>
             <td>Aykhal</td>
-            <td>66</td>
-            <td>111.5</td>
+            <td>66.0000</td>
+            <td>111.5000</td>
             <td>27.61</td>
             <td>96</td>
             <td>100</td>
@@ -1111,10 +1210,11 @@
             <td>1618316265</td>
           </tr>
           <tr>
+            <th>95</th>
             <td>Khani</td>
             <td>41.9563</td>
             <td>42.9566</td>
-            <td>48.2</td>
+            <td>48.20</td>
             <td>93</td>
             <td>90</td>
             <td>9.22</td>
@@ -1122,7 +1222,8 @@
             <td>1618316265</td>
           </tr>
           <tr>
-            <td>NdÃ©lÃ©</td>
+            <th>96</th>
+            <td>Ndélé</td>
             <td>8.4109</td>
             <td>20.6473</td>
             <td>105.31</td>
@@ -1133,10 +1234,11 @@
             <td>1618316266</td>
           </tr>
           <tr>
+            <th>97</th>
             <td>Malbork</td>
             <td>54.0359</td>
             <td>19.0266</td>
-            <td>52</td>
+            <td>52.00</td>
             <td>44</td>
             <td>99</td>
             <td>8.08</td>
@@ -1144,17 +1246,19 @@
             <td>1618316266</td>
           </tr>
           <tr>
+            <th>98</th>
             <td>Opuwo</td>
             <td>-18.0607</td>
-            <td>13.84</td>
+            <td>13.8400</td>
             <td>84.15</td>
             <td>24</td>
             <td>4</td>
             <td>14.09</td>
-            <td>NA</td>
+            <td>NaN</td>
             <td>1618316266</td>
           </tr>
           <tr>
+            <th>99</th>
             <td>Huanren</td>
             <td>41.2647</td>
             <td>125.3667</td>
@@ -1166,6 +1270,7 @@
             <td>1618316267</td>
           </tr>
           <tr>
+            <th>100</th>
             <td>Khanpur</td>
             <td>28.6453</td>
             <td>70.6567</td>
@@ -1177,21 +1282,23 @@
             <td>1618316267</td>
           </tr>
           <tr>
+            <th>101</th>
             <td>Tasiilaq</td>
             <td>65.6145</td>
             <td>-37.6368</td>
-            <td>28.4</td>
+            <td>28.40</td>
             <td>74</td>
             <td>20</td>
-            <td>2.3</td>
+            <td>2.30</td>
             <td>GL</td>
             <td>1618316268</td>
           </tr>
           <tr>
+            <th>102</th>
             <td>Hong Kong</td>
             <td>22.2855</td>
             <td>114.1577</td>
-            <td>79</td>
+            <td>79.00</td>
             <td>76</td>
             <td>12</td>
             <td>1.99</td>
@@ -1199,10 +1306,11 @@
             <td>1618316172</td>
           </tr>
           <tr>
-            <td>BerkÃ¥k</td>
-            <td>62.825</td>
+            <th>103</th>
+            <td>Berkåk</td>
+            <td>62.8250</td>
             <td>10.0118</td>
-            <td>39</td>
+            <td>39.00</td>
             <td>74</td>
             <td>100</td>
             <td>1.01</td>
@@ -1210,6 +1318,7 @@
             <td>1618316268</td>
           </tr>
           <tr>
+            <th>104</th>
             <td>Havelock</td>
             <td>34.8791</td>
             <td>-76.9013</td>
@@ -1221,10 +1330,11 @@
             <td>1618316269</td>
           </tr>
           <tr>
+            <th>105</th>
             <td>Bathsheba</td>
             <td>13.2167</td>
             <td>-59.5167</td>
-            <td>82.4</td>
+            <td>82.40</td>
             <td>65</td>
             <td>20</td>
             <td>14.97</td>
@@ -1232,9 +1342,10 @@
             <td>1618316269</td>
           </tr>
           <tr>
+            <th>106</th>
             <td>Ambilobe</td>
-            <td>-13.2</td>
-            <td>49.05</td>
+            <td>-13.2000</td>
+            <td>49.0500</td>
             <td>88.77</td>
             <td>59</td>
             <td>40</td>
@@ -1243,10 +1354,11 @@
             <td>1618316269</td>
           </tr>
           <tr>
+            <th>107</th>
             <td>Alice Springs</td>
-            <td>-23.7</td>
+            <td>-23.7000</td>
             <td>133.8833</td>
-            <td>71.6</td>
+            <td>71.60</td>
             <td>37</td>
             <td>67</td>
             <td>6.91</td>
@@ -1254,10 +1366,11 @@
             <td>1618316270</td>
           </tr>
           <tr>
+            <th>108</th>
             <td>Kiryat Gat</td>
-            <td>31.61</td>
+            <td>31.6100</td>
             <td>34.7642</td>
-            <td>68</td>
+            <td>68.00</td>
             <td>49</td>
             <td>2</td>
             <td>1.99</td>
@@ -1265,6 +1378,7 @@
             <td>1618316270</td>
           </tr>
           <tr>
+            <th>109</th>
             <td>Bonavista</td>
             <td>48.6499</td>
             <td>-53.1147</td>
@@ -1276,10 +1390,11 @@
             <td>1618316271</td>
           </tr>
           <tr>
-            <td>InÃ­rida</td>
+            <th>110</th>
+            <td>Inírida</td>
             <td>3.8653</td>
             <td>-67.9239</td>
-            <td>74.7</td>
+            <td>74.70</td>
             <td>92</td>
             <td>99</td>
             <td>1.25</td>
@@ -1287,6 +1402,7 @@
             <td>1618316271</td>
           </tr>
           <tr>
+            <th>111</th>
             <td>Butaritari</td>
             <td>3.0707</td>
             <td>172.7902</td>
@@ -1298,10 +1414,11 @@
             <td>1618316271</td>
           </tr>
           <tr>
+            <th>112</th>
             <td>Iqaluit</td>
             <td>63.7506</td>
             <td>-68.5145</td>
-            <td>15.8</td>
+            <td>15.80</td>
             <td>73</td>
             <td>75</td>
             <td>23.02</td>
@@ -1309,10 +1426,11 @@
             <td>1618316272</td>
           </tr>
           <tr>
+            <th>113</th>
             <td>Nuuk</td>
             <td>64.1835</td>
             <td>-51.7216</td>
-            <td>33.8</td>
+            <td>33.80</td>
             <td>80</td>
             <td>20</td>
             <td>10.36</td>
@@ -1320,10 +1438,11 @@
             <td>1618316272</td>
           </tr>
           <tr>
+            <th>114</th>
             <td>Santa Cruz del Sur</td>
             <td>20.7147</td>
             <td>-77.9956</td>
-            <td>77</td>
+            <td>77.00</td>
             <td>76</td>
             <td>38</td>
             <td>7.11</td>
@@ -1331,6 +1450,7 @@
             <td>1618316273</td>
           </tr>
           <tr>
+            <th>115</th>
             <td>Adrar</td>
             <td>20.5022</td>
             <td>-10.0711</td>
@@ -1342,10 +1462,11 @@
             <td>1618316273</td>
           </tr>
           <tr>
+            <th>116</th>
             <td>Jiuquan</td>
             <td>39.7432</td>
             <td>98.5174</td>
-            <td>52</td>
+            <td>52.00</td>
             <td>32</td>
             <td>7</td>
             <td>4.03</td>
@@ -1353,10 +1474,11 @@
             <td>1618316273</td>
           </tr>
           <tr>
+            <th>117</th>
             <td>Dunedin</td>
             <td>-45.8742</td>
             <td>170.5036</td>
-            <td>54</td>
+            <td>54.00</td>
             <td>91</td>
             <td>96</td>
             <td>1.99</td>
@@ -1364,17 +1486,19 @@
             <td>1618316172</td>
           </tr>
           <tr>
+            <th>118</th>
             <td>Walvis Bay</td>
             <td>-22.9575</td>
             <td>14.5053</td>
-            <td>104</td>
+            <td>104.00</td>
             <td>10</td>
             <td>0</td>
             <td>14.97</td>
-            <td>NA</td>
+            <td>NaN</td>
             <td>1618316274</td>
           </tr>
           <tr>
+            <th>119</th>
             <td>Chui</td>
             <td>-33.6971</td>
             <td>-53.4616</td>
@@ -1386,10 +1510,11 @@
             <td>1618316274</td>
           </tr>
           <tr>
+            <th>120</th>
             <td>Lloydminster</td>
             <td>53.2835</td>
             <td>-110.0016</td>
-            <td>19.4</td>
+            <td>19.40</td>
             <td>68</td>
             <td>1</td>
             <td>3.44</td>
@@ -1397,21 +1522,23 @@
             <td>1618315975</td>
           </tr>
           <tr>
+            <th>121</th>
             <td>Port Hardy</td>
             <td>50.6996</td>
             <td>-127.4199</td>
-            <td>42.8</td>
+            <td>42.80</td>
             <td>93</td>
             <td>1</td>
-            <td>2.3</td>
+            <td>2.30</td>
             <td>CA</td>
             <td>1618316275</td>
           </tr>
           <tr>
+            <th>122</th>
             <td>Barrow</td>
             <td>71.2906</td>
             <td>-156.7887</td>
-            <td>-4</td>
+            <td>-4.00</td>
             <td>77</td>
             <td>1</td>
             <td>9.22</td>
@@ -1419,10 +1546,11 @@
             <td>1618316275</td>
           </tr>
           <tr>
+            <th>123</th>
             <td>La Santisima Trinidad</td>
             <td>-14.8333</td>
-            <td>-64.9</td>
-            <td>67.1</td>
+            <td>-64.9000</td>
+            <td>67.10</td>
             <td>86</td>
             <td>99</td>
             <td>4.72</td>
@@ -1430,6 +1558,7 @@
             <td>1618316276</td>
           </tr>
           <tr>
+            <th>124</th>
             <td>Santa Teresa del Tuy</td>
             <td>10.2341</td>
             <td>-66.6631</td>
@@ -1441,10 +1570,11 @@
             <td>1618316276</td>
           </tr>
           <tr>
+            <th>125</th>
             <td>Narsaq</td>
             <td>60.9167</td>
-            <td>-46.05</td>
-            <td>37.4</td>
+            <td>-46.0500</td>
+            <td>37.40</td>
             <td>60</td>
             <td>1</td>
             <td>4.61</td>
@@ -1452,10 +1582,11 @@
             <td>1618316086</td>
           </tr>
           <tr>
+            <th>126</th>
             <td>Cidreira</td>
             <td>-30.1811</td>
             <td>-50.2056</td>
-            <td>70.3</td>
+            <td>70.30</td>
             <td>65</td>
             <td>99</td>
             <td>3.83</td>
@@ -1463,19 +1594,21 @@
             <td>1618316277</td>
           </tr>
           <tr>
+            <th>127</th>
             <td>Tatarsk</td>
-            <td>55.219</td>
+            <td>55.2190</td>
             <td>75.9828</td>
             <td>35.11</td>
             <td>97</td>
             <td>100</td>
-            <td>12.1</td>
+            <td>12.10</td>
             <td>RU</td>
             <td>1618316277</td>
           </tr>
           <tr>
+            <th>128</th>
             <td>Qaanaaq</td>
-            <td>77.484</td>
+            <td>77.4840</td>
             <td>-69.3632</td>
             <td>-1.77</td>
             <td>91</td>
@@ -1485,6 +1618,7 @@
             <td>1618316278</td>
           </tr>
           <tr>
+            <th>129</th>
             <td>Alta Floresta</td>
             <td>-9.8756</td>
             <td>-56.0861</td>
@@ -1496,6 +1630,7 @@
             <td>1618316278</td>
           </tr>
           <tr>
+            <th>130</th>
             <td>Troitskoye</td>
             <td>52.9821</td>
             <td>84.6757</td>
@@ -1507,6 +1642,7 @@
             <td>1618316278</td>
           </tr>
           <tr>
+            <th>131</th>
             <td>Yugorsk</td>
             <td>61.3133</td>
             <td>63.3319</td>
@@ -1518,10 +1654,11 @@
             <td>1618316225</td>
           </tr>
           <tr>
+            <th>132</th>
             <td>Balkhash</td>
-            <td>46.844</td>
+            <td>46.8440</td>
             <td>74.9804</td>
-            <td>71.6</td>
+            <td>71.60</td>
             <td>11</td>
             <td>0</td>
             <td>24.61</td>
@@ -1529,6 +1666,7 @@
             <td>1618316279</td>
           </tr>
           <tr>
+            <th>133</th>
             <td>Chokurdakh</td>
             <td>70.6333</td>
             <td>147.9167</td>
@@ -1540,10 +1678,11 @@
             <td>1618316279</td>
           </tr>
           <tr>
+            <th>134</th>
             <td>Jamestown</td>
-            <td>42.097</td>
+            <td>42.0970</td>
             <td>-79.2353</td>
-            <td>45</td>
+            <td>45.00</td>
             <td>100</td>
             <td>90</td>
             <td>3.44</td>
@@ -1551,9 +1690,10 @@
             <td>1618316280</td>
           </tr>
           <tr>
+            <th>135</th>
             <td>Vaitape</td>
             <td>-16.5167</td>
-            <td>-151.75</td>
+            <td>-151.7500</td>
             <td>80.35</td>
             <td>67</td>
             <td>100</td>
@@ -1562,6 +1702,7 @@
             <td>1618316280</td>
           </tr>
           <tr>
+            <th>136</th>
             <td>Santa Barbara</td>
             <td>34.7333</td>
             <td>-120.0343</td>
@@ -1573,10 +1714,11 @@
             <td>1618316174</td>
           </tr>
           <tr>
-            <td>SÃ£o JoÃ£o da Barra</td>
+            <th>137</th>
+            <td>São João da Barra</td>
             <td>-21.6403</td>
             <td>-41.0511</td>
-            <td>73.4</td>
+            <td>73.40</td>
             <td>88</td>
             <td>75</td>
             <td>6.91</td>
@@ -1584,10 +1726,11 @@
             <td>1618316201</td>
           </tr>
           <tr>
+            <th>138</th>
             <td>Saint George</td>
             <td>37.1041</td>
             <td>-113.5841</td>
-            <td>57.2</td>
+            <td>57.20</td>
             <td>18</td>
             <td>1</td>
             <td>4.29</td>
@@ -1595,6 +1738,7 @@
             <td>1618316124</td>
           </tr>
           <tr>
+            <th>139</th>
             <td>Liwale</td>
             <td>-9.7667</td>
             <td>37.9333</td>
@@ -1606,10 +1750,11 @@
             <td>1618316281</td>
           </tr>
           <tr>
+            <th>140</th>
             <td>Naranjal</td>
             <td>-2.6667</td>
             <td>-79.6167</td>
-            <td>78.8</td>
+            <td>78.80</td>
             <td>69</td>
             <td>90</td>
             <td>3.44</td>
@@ -1617,8 +1762,9 @@
             <td>1618316282</td>
           </tr>
           <tr>
+            <th>141</th>
             <td>Saint-Augustin</td>
-            <td>51.226</td>
+            <td>51.2260</td>
             <td>-58.6502</td>
             <td>36.27</td>
             <td>69</td>
@@ -1628,9 +1774,10 @@
             <td>1618316282</td>
           </tr>
           <tr>
+            <th>142</th>
             <td>Khudumelapye</td>
             <td>-23.8833</td>
-            <td>24.75</td>
+            <td>24.7500</td>
             <td>84.97</td>
             <td>15</td>
             <td>0</td>
@@ -1639,10 +1786,11 @@
             <td>1618316282</td>
           </tr>
           <tr>
+            <th>143</th>
             <td>Tiruchchendur</td>
             <td>8.4833</td>
             <td>78.1167</td>
-            <td>89.6</td>
+            <td>89.60</td>
             <td>62</td>
             <td>75</td>
             <td>3.44</td>
@@ -1650,21 +1798,23 @@
             <td>1618316283</td>
           </tr>
           <tr>
+            <th>144</th>
             <td>Chase</td>
             <td>50.8165</td>
             <td>-119.6857</td>
             <td>28.99</td>
             <td>74</td>
             <td>2</td>
-            <td>2.3</td>
+            <td>2.30</td>
             <td>CA</td>
             <td>1618316283</td>
           </tr>
           <tr>
+            <th>145</th>
             <td>Vila Franca do Campo</td>
             <td>37.7167</td>
             <td>-25.4333</td>
-            <td>62.6</td>
+            <td>62.60</td>
             <td>88</td>
             <td>40</td>
             <td>17.27</td>
@@ -1672,17 +1822,19 @@
             <td>1618316284</td>
           </tr>
           <tr>
+            <th>146</th>
             <td>Lafia</td>
             <td>8.4833</td>
             <td>8.5167</td>
             <td>102.15</td>
             <td>27</td>
             <td>90</td>
-            <td>5.7</td>
+            <td>5.70</td>
             <td>NG</td>
             <td>1618316284</td>
           </tr>
           <tr>
+            <th>147</th>
             <td>Remanso</td>
             <td>-9.6179</td>
             <td>-42.0831</td>
@@ -1694,10 +1846,11 @@
             <td>1618316284</td>
           </tr>
           <tr>
+            <th>148</th>
             <td>Belmonte</td>
             <td>-15.8631</td>
             <td>-38.8828</td>
-            <td>80.6</td>
+            <td>80.60</td>
             <td>61</td>
             <td>0</td>
             <td>5.75</td>
@@ -1705,8 +1858,9 @@
             <td>1618316285</td>
           </tr>
           <tr>
+            <th>149</th>
             <td>Ayan</td>
-            <td>56.45</td>
+            <td>56.4500</td>
             <td>138.1667</td>
             <td>17.62</td>
             <td>87</td>
@@ -1716,6 +1870,7 @@
             <td>1618316285</td>
           </tr>
           <tr>
+            <th>150</th>
             <td>Hervey Bay</td>
             <td>-25.2986</td>
             <td>152.8535</td>
@@ -1727,10 +1882,11 @@
             <td>1618316285</td>
           </tr>
           <tr>
+            <th>151</th>
             <td>Hagi</td>
-            <td>34.4</td>
+            <td>34.4000</td>
             <td>131.4167</td>
-            <td>59</td>
+            <td>59.00</td>
             <td>77</td>
             <td>20</td>
             <td>6.91</td>
@@ -1738,10 +1894,11 @@
             <td>1618316226</td>
           </tr>
           <tr>
+            <th>152</th>
             <td>Mahajanga</td>
             <td>-15.7167</td>
             <td>46.3167</td>
-            <td>91.4</td>
+            <td>91.40</td>
             <td>52</td>
             <td>20</td>
             <td>10.36</td>
@@ -1749,10 +1906,11 @@
             <td>1618316286</td>
           </tr>
           <tr>
+            <th>153</th>
             <td>Alvdal</td>
             <td>62.1077</td>
             <td>10.6307</td>
-            <td>30.2</td>
+            <td>30.20</td>
             <td>64</td>
             <td>75</td>
             <td>19.57</td>
@@ -1760,10 +1918,11 @@
             <td>1618316287</td>
           </tr>
           <tr>
+            <th>154</th>
             <td>Saint-Philippe</td>
             <td>-21.3585</td>
             <td>55.7679</td>
-            <td>84.2</td>
+            <td>84.20</td>
             <td>70</td>
             <td>75</td>
             <td>20.71</td>
@@ -1771,10 +1930,11 @@
             <td>1618316287</td>
           </tr>
           <tr>
+            <th>155</th>
             <td>Puerto Ayora</td>
             <td>-0.7393</td>
             <td>-90.3518</td>
-            <td>75</td>
+            <td>75.00</td>
             <td>98</td>
             <td>71</td>
             <td>3.22</td>
@@ -1782,6 +1942,7 @@
             <td>1618316287</td>
           </tr>
           <tr>
+            <th>156</th>
             <td>Pangkalanbuun</td>
             <td>-2.6833</td>
             <td>111.6167</td>
@@ -1793,8 +1954,9 @@
             <td>1618316288</td>
           </tr>
           <tr>
+            <th>157</th>
             <td>Marzuq</td>
-            <td>14.4</td>
+            <td>14.4000</td>
             <td>46.4667</td>
             <td>88.66</td>
             <td>23</td>
@@ -1804,8 +1966,9 @@
             <td>1618316288</td>
           </tr>
           <tr>
+            <th>158</th>
             <td>Lagoa</td>
-            <td>39.05</td>
+            <td>39.0500</td>
             <td>-27.9833</td>
             <td>59.94</td>
             <td>91</td>
@@ -1815,8 +1978,9 @@
             <td>1618316289</td>
           </tr>
           <tr>
+            <th>159</th>
             <td>Paamiut</td>
-            <td>61.994</td>
+            <td>61.9940</td>
             <td>-49.6678</td>
             <td>32.85</td>
             <td>71</td>
@@ -1826,21 +1990,23 @@
             <td>1618316289</td>
           </tr>
           <tr>
+            <th>160</th>
             <td>Oranjemund</td>
-            <td>-28.55</td>
+            <td>-28.5500</td>
             <td>16.4333</td>
             <td>91.74</td>
             <td>29</td>
             <td>0</td>
             <td>5.19</td>
-            <td>NA</td>
+            <td>NaN</td>
             <td>1618316290</td>
           </tr>
           <tr>
+            <th>161</th>
             <td>Saint-Joseph</td>
             <td>-21.3667</td>
             <td>55.6167</td>
-            <td>84.2</td>
+            <td>84.20</td>
             <td>70</td>
             <td>75</td>
             <td>20.71</td>
@@ -1848,10 +2014,11 @@
             <td>1618316290</td>
           </tr>
           <tr>
+            <th>162</th>
             <td>East London</td>
             <td>-33.0153</td>
             <td>27.9116</td>
-            <td>78.8</td>
+            <td>78.80</td>
             <td>78</td>
             <td>20</td>
             <td>8.05</td>
@@ -1859,10 +2026,11 @@
             <td>1618316291</td>
           </tr>
           <tr>
+            <th>163</th>
             <td>Cam Ranh</td>
             <td>11.9214</td>
             <td>109.1591</td>
-            <td>82.4</td>
+            <td>82.40</td>
             <td>74</td>
             <td>75</td>
             <td>5.75</td>
@@ -1870,6 +2038,7 @@
             <td>1618316291</td>
           </tr>
           <tr>
+            <th>164</th>
             <td>Luwuk</td>
             <td>-0.9516</td>
             <td>122.7875</td>
@@ -1881,6 +2050,7 @@
             <td>1618316062</td>
           </tr>
           <tr>
+            <th>165</th>
             <td>Provincia di Lecce</td>
             <td>40.2167</td>
             <td>18.1667</td>
@@ -1892,10 +2062,11 @@
             <td>1618316292</td>
           </tr>
           <tr>
+            <th>166</th>
             <td>Yanam</td>
             <td>16.7333</td>
             <td>82.2167</td>
-            <td>89.6</td>
+            <td>89.60</td>
             <td>51</td>
             <td>75</td>
             <td>23.02</td>
@@ -1903,10 +2074,11 @@
             <td>1618316292</td>
           </tr>
           <tr>
+            <th>167</th>
             <td>Lincoln</td>
-            <td>40.8</td>
-            <td>-96.667</td>
-            <td>36</td>
+            <td>40.8000</td>
+            <td>-96.6670</td>
+            <td>36.00</td>
             <td>60</td>
             <td>1</td>
             <td>6.91</td>
@@ -1914,6 +2086,7 @@
             <td>1618315640</td>
           </tr>
           <tr>
+            <th>168</th>
             <td>Nshamba</td>
             <td>-1.7983</td>
             <td>31.5511</td>
@@ -1925,10 +2098,11 @@
             <td>1618316293</td>
           </tr>
           <tr>
+            <th>169</th>
             <td>Pacific Grove</td>
             <td>36.6177</td>
             <td>-121.9166</td>
-            <td>50</td>
+            <td>50.00</td>
             <td>88</td>
             <td>22</td>
             <td>8.23</td>
@@ -1936,6 +2110,7 @@
             <td>1618316293</td>
           </tr>
           <tr>
+            <th>170</th>
             <td>Labytnangi</td>
             <td>66.6572</td>
             <td>66.4183</td>
@@ -1947,6 +2122,7 @@
             <td>1618316293</td>
           </tr>
           <tr>
+            <th>171</th>
             <td>Karratha</td>
             <td>-20.7377</td>
             <td>116.8463</td>
@@ -1958,10 +2134,11 @@
             <td>1618316294</td>
           </tr>
           <tr>
+            <th>172</th>
             <td>Sitka</td>
             <td>57.0531</td>
-            <td>-135.33</td>
-            <td>39.2</td>
+            <td>-135.3300</td>
+            <td>39.20</td>
             <td>81</td>
             <td>90</td>
             <td>18.41</td>
@@ -1969,10 +2146,11 @@
             <td>1618316294</td>
           </tr>
           <tr>
+            <th>173</th>
             <td>Muli</td>
             <td>2.9167</td>
             <td>73.5667</td>
-            <td>84</td>
+            <td>84.00</td>
             <td>70</td>
             <td>38</td>
             <td>7.96</td>
@@ -1980,6 +2158,7 @@
             <td>1618316295</td>
           </tr>
           <tr>
+            <th>174</th>
             <td>Gambiran</td>
             <td>-6.7988</td>
             <td>111.4951</td>
@@ -1991,6 +2170,7 @@
             <td>1618316295</td>
           </tr>
           <tr>
+            <th>175</th>
             <td>Saskylakh</td>
             <td>71.9167</td>
             <td>114.0833</td>
@@ -2002,9 +2182,10 @@
             <td>1618316295</td>
           </tr>
           <tr>
+            <th>176</th>
             <td>Provideniya</td>
             <td>64.3833</td>
-            <td>-173.3</td>
+            <td>-173.3000</td>
             <td>15.84</td>
             <td>91</td>
             <td>100</td>
@@ -2013,6 +2194,7 @@
             <td>1618316296</td>
           </tr>
           <tr>
+            <th>177</th>
             <td>Kieta</td>
             <td>-6.2167</td>
             <td>155.6333</td>
@@ -2024,10 +2206,11 @@
             <td>1618316296</td>
           </tr>
           <tr>
+            <th>178</th>
             <td>Zhezkazgan</td>
             <td>47.8043</td>
             <td>67.7144</td>
-            <td>69.8</td>
+            <td>69.80</td>
             <td>13</td>
             <td>0</td>
             <td>26.84</td>
@@ -2035,6 +2218,7 @@
             <td>1618316296</td>
           </tr>
           <tr>
+            <th>179</th>
             <td>Jardim</td>
             <td>-21.4803</td>
             <td>-56.1381</td>
@@ -2046,10 +2230,11 @@
             <td>1618316118</td>
           </tr>
           <tr>
+            <th>180</th>
             <td>Friedrichshafen</td>
-            <td>47.65</td>
+            <td>47.6500</td>
             <td>9.4833</td>
-            <td>41</td>
+            <td>41.00</td>
             <td>81</td>
             <td>90</td>
             <td>8.05</td>
@@ -2057,6 +2242,7 @@
             <td>1618316297</td>
           </tr>
           <tr>
+            <th>181</th>
             <td>Ketchikan</td>
             <td>55.3422</td>
             <td>-131.6461</td>
@@ -2068,10 +2254,11 @@
             <td>1618316118</td>
           </tr>
           <tr>
+            <th>182</th>
             <td>Rome</td>
             <td>43.2128</td>
             <td>-75.4557</td>
-            <td>44.6</td>
+            <td>44.60</td>
             <td>93</td>
             <td>90</td>
             <td>3.44</td>
@@ -2079,10 +2266,11 @@
             <td>1618316283</td>
           </tr>
           <tr>
+            <th>183</th>
             <td>Palmer</td>
             <td>42.1584</td>
             <td>-72.3287</td>
-            <td>46</td>
+            <td>46.00</td>
             <td>70</td>
             <td>40</td>
             <td>5.75</td>
@@ -2090,10 +2278,11 @@
             <td>1618316021</td>
           </tr>
           <tr>
+            <th>184</th>
             <td>Bethel</td>
             <td>41.3712</td>
-            <td>-73.414</td>
-            <td>45</td>
+            <td>-73.4140</td>
+            <td>45.00</td>
             <td>76</td>
             <td>90</td>
             <td>6.62</td>
@@ -2101,6 +2290,7 @@
             <td>1618316298</td>
           </tr>
           <tr>
+            <th>185</th>
             <td>Bilibino</td>
             <td>68.0546</td>
             <td>166.4372</td>
@@ -2112,6 +2302,7 @@
             <td>1618316299</td>
           </tr>
           <tr>
+            <th>186</th>
             <td>Usta Muhammad</td>
             <td>28.1794</td>
             <td>68.0445</td>
@@ -2123,6 +2314,7 @@
             <td>1618316299</td>
           </tr>
           <tr>
+            <th>187</th>
             <td>Antalaha</td>
             <td>-14.9003</td>
             <td>50.2788</td>
@@ -2134,21 +2326,23 @@
             <td>1618316299</td>
           </tr>
           <tr>
-            <td>KlaksvÃ­k</td>
+            <th>188</th>
+            <td>Klaksvík</td>
             <td>62.2266</td>
-            <td>-6.589</td>
-            <td>42.8</td>
+            <td>-6.5890</td>
+            <td>42.80</td>
             <td>75</td>
             <td>75</td>
-            <td>11.5</td>
+            <td>11.50</td>
             <td>FO</td>
             <td>1618316300</td>
           </tr>
           <tr>
+            <th>189</th>
             <td>Mount Isa</td>
             <td>-20.7333</td>
-            <td>139.5</td>
-            <td>64.4</td>
+            <td>139.5000</td>
+            <td>64.40</td>
             <td>27</td>
             <td>19</td>
             <td>7.16</td>
@@ -2156,6 +2350,7 @@
             <td>1618316300</td>
           </tr>
           <tr>
+            <th>190</th>
             <td>Batagay-Alyta</td>
             <td>67.8006</td>
             <td>130.4114</td>
@@ -2167,10 +2362,11 @@
             <td>1618316301</td>
           </tr>
           <tr>
+            <th>191</th>
             <td>Constantine</td>
-            <td>36.365</td>
+            <td>36.3650</td>
             <td>6.6147</td>
-            <td>59</td>
+            <td>59.00</td>
             <td>51</td>
             <td>40</td>
             <td>4.61</td>
@@ -2178,10 +2374,11 @@
             <td>1618316301</td>
           </tr>
           <tr>
+            <th>192</th>
             <td>Clyde River</td>
             <td>70.4692</td>
             <td>-68.5914</td>
-            <td>5</td>
+            <td>5.00</td>
             <td>85</td>
             <td>90</td>
             <td>21.85</td>
@@ -2189,10 +2386,11 @@
             <td>1618316301</td>
           </tr>
           <tr>
+            <th>193</th>
             <td>Kahului</td>
             <td>20.8947</td>
-            <td>-156.47</td>
-            <td>66.2</td>
+            <td>-156.4700</td>
+            <td>66.20</td>
             <td>88</td>
             <td>1</td>
             <td>5.75</td>
@@ -2200,21 +2398,23 @@
             <td>1618316302</td>
           </tr>
           <tr>
+            <th>194</th>
             <td>Sahuaripa</td>
-            <td>29.05</td>
+            <td>29.0500</td>
             <td>-109.2333</td>
             <td>60.04</td>
             <td>45</td>
             <td>0</td>
-            <td>4.7</td>
+            <td>4.70</td>
             <td>MX</td>
             <td>1618316302</td>
           </tr>
           <tr>
+            <th>195</th>
             <td>Nantucket</td>
             <td>41.2835</td>
             <td>-70.0995</td>
-            <td>46.4</td>
+            <td>46.40</td>
             <td>76</td>
             <td>90</td>
             <td>19.57</td>
@@ -2222,10 +2422,11 @@
             <td>1618316204</td>
           </tr>
           <tr>
+            <th>196</th>
             <td>Buraidah</td>
-            <td>26.326</td>
-            <td>43.975</td>
-            <td>91.4</td>
+            <td>26.3260</td>
+            <td>43.9750</td>
+            <td>91.40</td>
             <td>31</td>
             <td>0</td>
             <td>9.22</td>
@@ -2233,21 +2434,23 @@
             <td>1618316303</td>
           </tr>
           <tr>
+            <th>197</th>
             <td>Vestmannaeyjar</td>
             <td>63.4427</td>
             <td>-20.2734</td>
-            <td>42.8</td>
+            <td>42.80</td>
             <td>93</td>
             <td>75</td>
-            <td>11.5</td>
+            <td>11.50</td>
             <td>IS</td>
             <td>1618316303</td>
           </tr>
           <tr>
+            <th>198</th>
             <td>George Town</td>
             <td>5.4112</td>
             <td>100.3354</td>
-            <td>84.2</td>
+            <td>84.20</td>
             <td>88</td>
             <td>40</td>
             <td>5.75</td>
@@ -2255,6 +2458,7 @@
             <td>1618316217</td>
           </tr>
           <tr>
+            <th>199</th>
             <td>Bubaque</td>
             <td>11.2833</td>
             <td>-15.8333</td>
@@ -2266,6 +2470,7 @@
             <td>1618316304</td>
           </tr>
           <tr>
+            <th>200</th>
             <td>San Alberto</td>
             <td>7.7611</td>
             <td>-73.3922</td>
@@ -2277,10 +2482,11 @@
             <td>1618316304</td>
           </tr>
           <tr>
+            <th>201</th>
             <td>Trujillo</td>
-            <td>-8.116</td>
-            <td>-79.03</td>
-            <td>64.4</td>
+            <td>-8.1160</td>
+            <td>-79.0300</td>
+            <td>64.40</td>
             <td>94</td>
             <td>90</td>
             <td>5.75</td>
@@ -2288,21 +2494,23 @@
             <td>1618316304</td>
           </tr>
           <tr>
+            <th>202</th>
             <td>Sacramento</td>
             <td>38.4666</td>
             <td>-121.3177</td>
-            <td>52</td>
+            <td>52.00</td>
             <td>71</td>
             <td>1</td>
-            <td>11.5</td>
+            <td>11.50</td>
             <td>US</td>
             <td>1618315498</td>
           </tr>
           <tr>
+            <th>203</th>
             <td>Souillac</td>
             <td>-20.5167</td>
             <td>57.5167</td>
-            <td>82.4</td>
+            <td>82.40</td>
             <td>65</td>
             <td>75</td>
             <td>5.75</td>
@@ -2310,21 +2518,23 @@
             <td>1618316305</td>
           </tr>
           <tr>
+            <th>204</th>
             <td>Lillooet</td>
             <td>50.6856</td>
-            <td>-121.942</td>
-            <td>28.4</td>
+            <td>-121.9420</td>
+            <td>28.40</td>
             <td>86</td>
             <td>1</td>
-            <td>2.3</td>
+            <td>2.30</td>
             <td>CA</td>
             <td>1618316305</td>
           </tr>
           <tr>
+            <th>205</th>
             <td>Poum</td>
             <td>-20.2333</td>
             <td>164.0167</td>
-            <td>78.1</td>
+            <td>78.10</td>
             <td>81</td>
             <td>98</td>
             <td>7.74</td>
@@ -2332,10 +2542,11 @@
             <td>1618316306</td>
           </tr>
           <tr>
+            <th>206</th>
             <td>Lompoc</td>
             <td>34.6391</td>
             <td>-120.4579</td>
-            <td>50</td>
+            <td>50.00</td>
             <td>81</td>
             <td>75</td>
             <td>5.75</td>
@@ -2343,10 +2554,11 @@
             <td>1618316101</td>
           </tr>
           <tr>
-            <td>MoÃ¯ssala</td>
+            <th>207</th>
+            <td>Moïssala</td>
             <td>8.3404</td>
             <td>17.7663</td>
-            <td>101.3</td>
+            <td>101.30</td>
             <td>15</td>
             <td>67</td>
             <td>11.41</td>
@@ -2354,8 +2566,9 @@
             <td>1618316306</td>
           </tr>
           <tr>
+            <th>208</th>
             <td>Arman'</td>
-            <td>59.7</td>
+            <td>59.7000</td>
             <td>150.1667</td>
             <td>6.53</td>
             <td>79</td>
@@ -2365,6 +2578,7 @@
             <td>1618316307</td>
           </tr>
           <tr>
+            <th>209</th>
             <td>Benguela</td>
             <td>-12.5763</td>
             <td>13.4055</td>
@@ -2376,10 +2590,11 @@
             <td>1618316307</td>
           </tr>
           <tr>
+            <th>210</th>
             <td>Smithers</td>
             <td>54.7804</td>
             <td>-127.1743</td>
-            <td>28.4</td>
+            <td>28.40</td>
             <td>80</td>
             <td>75</td>
             <td>0.49</td>
@@ -2387,10 +2602,11 @@
             <td>1618316307</td>
           </tr>
           <tr>
+            <th>211</th>
             <td>Campo Grande</td>
             <td>-20.4428</td>
             <td>-54.6464</td>
-            <td>73.4</td>
+            <td>73.40</td>
             <td>88</td>
             <td>20</td>
             <td>8.05</td>
@@ -2398,10 +2614,11 @@
             <td>1618316283</td>
           </tr>
           <tr>
+            <th>212</th>
             <td>The Valley</td>
-            <td>18.217</td>
+            <td>18.2170</td>
             <td>-63.0578</td>
-            <td>82.4</td>
+            <td>82.40</td>
             <td>89</td>
             <td>20</td>
             <td>6.91</td>
@@ -2409,10 +2626,11 @@
             <td>1618316268</td>
           </tr>
           <tr>
+            <th>213</th>
             <td>Rapsani</td>
-            <td>39.902</td>
+            <td>39.9020</td>
             <td>22.5485</td>
-            <td>68</td>
+            <td>68.00</td>
             <td>52</td>
             <td>75</td>
             <td>3.62</td>
@@ -2420,10 +2638,11 @@
             <td>1618316308</td>
           </tr>
           <tr>
+            <th>214</th>
             <td>Arroyo de la Encomienda</td>
             <td>41.6096</td>
             <td>-4.7969</td>
-            <td>46</td>
+            <td>46.00</td>
             <td>100</td>
             <td>75</td>
             <td>5.75</td>
@@ -2431,9 +2650,10 @@
             <td>1618316309</td>
           </tr>
           <tr>
+            <th>215</th>
             <td>Ponta do Sol</td>
             <td>32.6667</td>
-            <td>-17.1</td>
+            <td>-17.1000</td>
             <td>64.99</td>
             <td>89</td>
             <td>100</td>
@@ -2442,10 +2662,11 @@
             <td>1618316309</td>
           </tr>
           <tr>
+            <th>216</th>
             <td>Port Hedland</td>
             <td>-20.3167</td>
             <td>118.5667</td>
-            <td>84.2</td>
+            <td>84.20</td>
             <td>79</td>
             <td>26</td>
             <td>9.22</td>
@@ -2453,10 +2674,11 @@
             <td>1618316309</td>
           </tr>
           <tr>
-            <td>MethÃ³ni</td>
+            <th>217</th>
+            <td>Methóni</td>
             <td>36.8197</td>
             <td>21.7049</td>
-            <td>70</td>
+            <td>70.00</td>
             <td>28</td>
             <td>75</td>
             <td>5.75</td>
@@ -2464,6 +2686,7 @@
             <td>1618316310</td>
           </tr>
           <tr>
+            <th>218</th>
             <td>Heraclea</td>
             <td>37.5133</td>
             <td>34.0467</td>
@@ -2475,10 +2698,11 @@
             <td>1618316310</td>
           </tr>
           <tr>
+            <th>219</th>
             <td>Hirara</td>
-            <td>24.8</td>
+            <td>24.8000</td>
             <td>125.2833</td>
-            <td>73.4</td>
+            <td>73.40</td>
             <td>94</td>
             <td>20</td>
             <td>4.61</td>
@@ -2486,10 +2710,11 @@
             <td>1618316311</td>
           </tr>
           <tr>
-            <td>SÃ£o Miguel</td>
+            <th>220</th>
+            <td>São Miguel</td>
             <td>-5.4667</td>
             <td>-35.3667</td>
-            <td>82.4</td>
+            <td>82.40</td>
             <td>83</td>
             <td>20</td>
             <td>6.91</td>
@@ -2497,21 +2722,23 @@
             <td>1618316311</td>
           </tr>
           <tr>
+            <th>221</th>
             <td>Sai Buri</td>
             <td>6.7013</td>
             <td>101.6168</td>
             <td>81.77</td>
             <td>77</td>
             <td>59</td>
-            <td>7</td>
+            <td>7.00</td>
             <td>TH</td>
             <td>1618316311</td>
           </tr>
           <tr>
+            <th>222</th>
             <td>Malatya Province</td>
-            <td>38.5</td>
-            <td>38</td>
-            <td>48.2</td>
+            <td>38.5000</td>
+            <td>38.0000</td>
+            <td>48.20</td>
             <td>66</td>
             <td>75</td>
             <td>9.22</td>
@@ -2519,17 +2746,19 @@
             <td>1618316312</td>
           </tr>
           <tr>
+            <th>223</th>
             <td>Jacareacanga</td>
             <td>-6.2222</td>
             <td>-57.7528</td>
-            <td>78.8</td>
+            <td>78.80</td>
             <td>94</td>
             <td>0</td>
-            <td>2.3</td>
+            <td>2.30</td>
             <td>BR</td>
             <td>1618316312</td>
           </tr>
           <tr>
+            <th>224</th>
             <td>Verkhovazh'ye</td>
             <td>60.7472</td>
             <td>42.0465</td>
@@ -2541,10 +2770,11 @@
             <td>1618316313</td>
           </tr>
           <tr>
+            <th>225</th>
             <td>Tarata</td>
             <td>-17.6167</td>
             <td>-66.0167</td>
-            <td>59</td>
+            <td>59.00</td>
             <td>72</td>
             <td>69</td>
             <td>1.01</td>
@@ -2552,6 +2782,7 @@
             <td>1618316313</td>
           </tr>
           <tr>
+            <th>226</th>
             <td>Ancud</td>
             <td>-41.8697</td>
             <td>-73.8203</td>
@@ -2563,10 +2794,11 @@
             <td>1618316313</td>
           </tr>
           <tr>
+            <th>227</th>
             <td>Bambous Virieux</td>
             <td>-20.3428</td>
             <td>57.7575</td>
-            <td>82.4</td>
+            <td>82.40</td>
             <td>65</td>
             <td>75</td>
             <td>5.75</td>
@@ -2574,6 +2806,7 @@
             <td>1618316314</td>
           </tr>
           <tr>
+            <th>228</th>
             <td>Portland</td>
             <td>45.5234</td>
             <td>-122.6762</td>
@@ -2585,6 +2818,7 @@
             <td>1618315668</td>
           </tr>
           <tr>
+            <th>229</th>
             <td>Ulagan</td>
             <td>50.6321</td>
             <td>87.9563</td>
@@ -2596,10 +2830,11 @@
             <td>1618316314</td>
           </tr>
           <tr>
+            <th>230</th>
             <td>Rapid Valley</td>
             <td>44.0625</td>
             <td>-103.1463</td>
-            <td>30</td>
+            <td>30.00</td>
             <td>68</td>
             <td>20</td>
             <td>23.02</td>
@@ -2607,21 +2842,23 @@
             <td>1618316295</td>
           </tr>
           <tr>
+            <th>231</th>
             <td>Cerro Punta</td>
-            <td>8.85</td>
+            <td>8.8500</td>
             <td>-82.5667</td>
             <td>80.01</td>
             <td>100</td>
             <td>20</td>
-            <td>2.3</td>
+            <td>2.30</td>
             <td>PA</td>
             <td>1618316315</td>
           </tr>
           <tr>
+            <th>232</th>
             <td>Novogurovskiy</td>
             <td>54.4678</td>
             <td>37.3428</td>
-            <td>69.8</td>
+            <td>69.80</td>
             <td>30</td>
             <td>40</td>
             <td>20.13</td>
@@ -2629,6 +2866,7 @@
             <td>1618316316</td>
           </tr>
           <tr>
+            <th>233</th>
             <td>Kalmunai</td>
             <td>7.4167</td>
             <td>81.8167</td>
@@ -2640,10 +2878,11 @@
             <td>1618316316</td>
           </tr>
           <tr>
+            <th>234</th>
             <td>Ilulissat</td>
             <td>69.2167</td>
-            <td>-51.1</td>
-            <td>30.2</td>
+            <td>-51.1000</td>
+            <td>30.20</td>
             <td>93</td>
             <td>90</td>
             <td>12.66</td>
@@ -2651,6 +2890,7 @@
             <td>1618316316</td>
           </tr>
           <tr>
+            <th>235</th>
             <td>Simao</td>
             <td>22.7886</td>
             <td>100.9748</td>
@@ -2662,6 +2902,7 @@
             <td>1618316317</td>
           </tr>
           <tr>
+            <th>236</th>
             <td>Tigzirt</td>
             <td>36.8886</td>
             <td>4.1198</td>
@@ -2673,10 +2914,11 @@
             <td>1618316317</td>
           </tr>
           <tr>
+            <th>237</th>
             <td>Lyngseidet</td>
             <td>69.5763</td>
             <td>20.2189</td>
-            <td>37.4</td>
+            <td>37.40</td>
             <td>44</td>
             <td>20</td>
             <td>8.05</td>
@@ -2684,7 +2926,8 @@
             <td>1618316317</td>
           </tr>
           <tr>
-            <td>TeknÄf</td>
+            <th>238</th>
+            <td>Teknāf</td>
             <td>20.8624</td>
             <td>92.3058</td>
             <td>81.79</td>
@@ -2695,6 +2938,7 @@
             <td>1618316318</td>
           </tr>
           <tr>
+            <th>239</th>
             <td>Sena Madureira</td>
             <td>-9.0656</td>
             <td>-68.6569</td>
@@ -2706,6 +2950,7 @@
             <td>1618316318</td>
           </tr>
           <tr>
+            <th>240</th>
             <td>Bengkulu</td>
             <td>-3.8004</td>
             <td>102.2655</td>
@@ -2717,7 +2962,8 @@
             <td>1618316319</td>
           </tr>
           <tr>
-            <td>MitÃº</td>
+            <th>241</th>
+            <td>Mitú</td>
             <td>1.1983</td>
             <td>-70.1733</td>
             <td>73.31</td>
@@ -2728,7 +2974,8 @@
             <td>1618316319</td>
           </tr>
           <tr>
-            <td>Rodolfo SÃ¡nchez Taboada</td>
+            <th>242</th>
+            <td>Rodolfo Sánchez Taboada</td>
             <td>31.7167</td>
             <td>-116.5667</td>
             <td>57.99</td>
@@ -2739,20 +2986,22 @@
             <td>1618316319</td>
           </tr>
           <tr>
+            <th>243</th>
             <td>Uspenka</td>
             <td>48.3903</td>
             <td>39.1619</td>
             <td>57.36</td>
             <td>76</td>
             <td>99</td>
-            <td>12.3</td>
+            <td>12.30</td>
             <td>UA</td>
             <td>1618316320</td>
           </tr>
           <tr>
-            <td>FerkessÃ©dougou</td>
-            <td>9.6</td>
-            <td>-5.2</td>
+            <th>244</th>
+            <td>Ferkessédougou</td>
+            <td>9.6000</td>
+            <td>-5.2000</td>
             <td>101.59</td>
             <td>27</td>
             <td>54</td>
@@ -2761,10 +3010,11 @@
             <td>1618316320</td>
           </tr>
           <tr>
+            <th>245</th>
             <td>Anloga</td>
             <td>5.7947</td>
             <td>0.8973</td>
-            <td>91.4</td>
+            <td>91.40</td>
             <td>58</td>
             <td>20</td>
             <td>10.36</td>
@@ -2772,6 +3022,7 @@
             <td>1618316321</td>
           </tr>
           <tr>
+            <th>246</th>
             <td>Tuapse</td>
             <td>44.1125</td>
             <td>39.0742</td>
@@ -2783,18 +3034,20 @@
             <td>1618316321</td>
           </tr>
           <tr>
+            <th>247</th>
             <td>Porbandar</td>
             <td>21.6422</td>
             <td>69.6093</td>
-            <td>91.4</td>
+            <td>91.40</td>
             <td>35</td>
             <td>33</td>
-            <td>13.8</td>
+            <td>13.80</td>
             <td>IN</td>
             <td>1618316322</td>
           </tr>
           <tr>
-            <td>MazarrÃ³n</td>
+            <th>248</th>
+            <td>Mazarrón</td>
             <td>37.5992</td>
             <td>-1.3149</td>
             <td>64.99</td>
@@ -2805,6 +3058,7 @@
             <td>1618316322</td>
           </tr>
           <tr>
+            <th>249</th>
             <td>Kirksville</td>
             <td>40.1948</td>
             <td>-92.5833</td>
@@ -2816,6 +3070,7 @@
             <td>1618316322</td>
           </tr>
           <tr>
+            <th>250</th>
             <td>Tarabuco</td>
             <td>-19.1667</td>
             <td>-64.9167</td>
@@ -2827,9 +3082,10 @@
             <td>1618316323</td>
           </tr>
           <tr>
-            <td>San QuintÃ­n</td>
+            <th>251</th>
+            <td>San Quintín</td>
             <td>30.4833</td>
-            <td>-115.95</td>
+            <td>-115.9500</td>
             <td>56.84</td>
             <td>79</td>
             <td>85</td>
@@ -2838,10 +3094,11 @@
             <td>1618316208</td>
           </tr>
           <tr>
+            <th>252</th>
             <td>Batemans Bay</td>
             <td>-35.7167</td>
             <td>150.1833</td>
-            <td>57</td>
+            <td>57.00</td>
             <td>81</td>
             <td>89</td>
             <td>7.25</td>
@@ -2849,10 +3106,11 @@
             <td>1618316323</td>
           </tr>
           <tr>
+            <th>253</th>
             <td>Ust-Maya</td>
             <td>60.4167</td>
             <td>134.5333</td>
-            <td>5.2</td>
+            <td>5.20</td>
             <td>94</td>
             <td>62</td>
             <td>1.79</td>
@@ -2860,17 +3118,19 @@
             <td>1618316324</td>
           </tr>
           <tr>
+            <th>254</th>
             <td>Tsumeb</td>
             <td>-19.2333</td>
             <td>17.7167</td>
-            <td>80.6</td>
+            <td>80.60</td>
             <td>36</td>
             <td>0</td>
             <td>12.66</td>
-            <td>NA</td>
+            <td>NaN</td>
             <td>1618316324</td>
           </tr>
           <tr>
+            <th>255</th>
             <td>Talnakh</td>
             <td>69.4865</td>
             <td>88.3972</td>
@@ -2882,6 +3142,7 @@
             <td>1618316324</td>
           </tr>
           <tr>
+            <th>256</th>
             <td>Ostrovnoy</td>
             <td>68.0531</td>
             <td>39.5131</td>
@@ -2893,6 +3154,7 @@
             <td>1618316325</td>
           </tr>
           <tr>
+            <th>257</th>
             <td>Berdigestyakh</td>
             <td>62.0989</td>
             <td>126.6992</td>
@@ -2904,10 +3166,11 @@
             <td>1618316325</td>
           </tr>
           <tr>
+            <th>258</th>
             <td>Brae</td>
             <td>60.3964</td>
-            <td>-1.353</td>
-            <td>44.6</td>
+            <td>-1.3530</td>
+            <td>44.60</td>
             <td>49</td>
             <td>40</td>
             <td>12.66</td>
@@ -2915,9 +3178,10 @@
             <td>1618316326</td>
           </tr>
           <tr>
+            <th>259</th>
             <td>Beyneu</td>
             <td>45.3167</td>
-            <td>55.2</td>
+            <td>55.2000</td>
             <td>74.95</td>
             <td>11</td>
             <td>0</td>
@@ -2926,6 +3190,7 @@
             <td>1618316326</td>
           </tr>
           <tr>
+            <th>260</th>
             <td>Kismayo</td>
             <td>-0.3582</td>
             <td>42.5454</td>
@@ -2937,8 +3202,9 @@
             <td>1618316149</td>
           </tr>
           <tr>
+            <th>261</th>
             <td>Isangel</td>
-            <td>-19.55</td>
+            <td>-19.5500</td>
             <td>169.2667</td>
             <td>78.66</td>
             <td>86</td>
@@ -2948,10 +3214,11 @@
             <td>1618316327</td>
           </tr>
           <tr>
+            <th>262</th>
             <td>Bowen</td>
             <td>-20.0167</td>
             <td>148.2333</td>
-            <td>71.6</td>
+            <td>71.60</td>
             <td>94</td>
             <td>75</td>
             <td>9.22</td>
@@ -2959,10 +3226,11 @@
             <td>1618316327</td>
           </tr>
           <tr>
+            <th>263</th>
             <td>Suntar</td>
             <td>62.1444</td>
             <td>117.6319</td>
-            <td>26.1</td>
+            <td>26.10</td>
             <td>81</td>
             <td>99</td>
             <td>8.66</td>
@@ -2970,8 +3238,9 @@
             <td>1618316327</td>
           </tr>
           <tr>
+            <th>264</th>
             <td>Campos Gerais</td>
-            <td>-21.235</td>
+            <td>-21.2350</td>
             <td>-45.7586</td>
             <td>69.08</td>
             <td>64</td>
@@ -2981,6 +3250,7 @@
             <td>1618316328</td>
           </tr>
           <tr>
+            <th>265</th>
             <td>Tura</td>
             <td>25.5198</td>
             <td>90.2201</td>
@@ -2992,19 +3262,21 @@
             <td>1618316123</td>
           </tr>
           <tr>
+            <th>266</th>
             <td>Melito di Porto Salvo</td>
             <td>37.9222</td>
             <td>15.7714</td>
             <td>62.01</td>
             <td>68</td>
             <td>7</td>
-            <td>15.3</td>
+            <td>15.30</td>
             <td>IT</td>
             <td>1618316328</td>
           </tr>
           <tr>
+            <th>267</th>
             <td>Beringovskiy</td>
-            <td>63.05</td>
+            <td>63.0500</td>
             <td>179.3167</td>
             <td>10.38</td>
             <td>91</td>
@@ -3014,17 +3286,19 @@
             <td>1618316329</td>
           </tr>
           <tr>
-            <td>SaÃ½at</td>
+            <th>268</th>
+            <td>Saýat</td>
             <td>38.7839</td>
             <td>63.8803</td>
-            <td>77</td>
+            <td>77.00</td>
             <td>14</td>
             <td>0</td>
-            <td>11.5</td>
+            <td>11.50</td>
             <td>TM</td>
             <td>1618316329</td>
           </tr>
           <tr>
+            <th>269</th>
             <td>Aksarka</td>
             <td>66.5606</td>
             <td>67.7975</td>
@@ -3036,10 +3310,11 @@
             <td>1618316330</td>
           </tr>
           <tr>
-            <td>PithÄpuram</td>
+            <th>270</th>
+            <td>Pithāpuram</td>
             <td>17.1167</td>
             <td>82.2667</td>
-            <td>89.6</td>
+            <td>89.60</td>
             <td>51</td>
             <td>75</td>
             <td>23.02</td>
@@ -3047,10 +3322,11 @@
             <td>1618316330</td>
           </tr>
           <tr>
+            <th>271</th>
             <td>Goderich</td>
             <td>43.7501</td>
             <td>-81.7165</td>
-            <td>46.4</td>
+            <td>46.40</td>
             <td>81</td>
             <td>79</td>
             <td>5.75</td>
@@ -3058,18 +3334,20 @@
             <td>1618316147</td>
           </tr>
           <tr>
+            <th>272</th>
             <td>Baykit</td>
-            <td>61.67</td>
-            <td>96.37</td>
+            <td>61.6700</td>
+            <td>96.3700</td>
             <td>32.09</td>
             <td>83</td>
             <td>99</td>
-            <td>9.6</td>
+            <td>9.60</td>
             <td>RU</td>
             <td>1618316331</td>
           </tr>
           <tr>
-            <td>SÃ£o JosÃ© da Coroa Grande</td>
+            <th>273</th>
+            <td>São José da Coroa Grande</td>
             <td>-8.8978</td>
             <td>-35.1478</td>
             <td>80.94</td>
@@ -3080,6 +3358,7 @@
             <td>1618316331</td>
           </tr>
           <tr>
+            <th>274</th>
             <td>Kristianstad</td>
             <td>56.0313</td>
             <td>14.1524</td>
@@ -3091,9 +3370,10 @@
             <td>1618316332</td>
           </tr>
           <tr>
+            <th>275</th>
             <td>Shenjiamen</td>
             <td>29.9576</td>
-            <td>122.298</td>
+            <td>122.2980</td>
             <td>54.52</td>
             <td>84</td>
             <td>97</td>
@@ -3102,9 +3382,10 @@
             <td>1618316332</td>
           </tr>
           <tr>
+            <th>276</th>
             <td>Cherskiy</td>
-            <td>68.75</td>
-            <td>161.3</td>
+            <td>68.7500</td>
+            <td>161.3000</td>
             <td>-16.76</td>
             <td>98</td>
             <td>70</td>
@@ -3113,6 +3394,7 @@
             <td>1618316332</td>
           </tr>
           <tr>
+            <th>277</th>
             <td>Shelburne</td>
             <td>44.0787</td>
             <td>-80.2041</td>
@@ -3124,6 +3406,7 @@
             <td>1618316333</td>
           </tr>
           <tr>
+            <th>278</th>
             <td>Biltine</td>
             <td>14.5333</td>
             <td>20.9167</td>
@@ -3135,6 +3418,7 @@
             <td>1618316333</td>
           </tr>
           <tr>
+            <th>279</th>
             <td>Nsunga</td>
             <td>-1.1439</td>
             <td>31.3947</td>
@@ -3146,9 +3430,10 @@
             <td>1618316287</td>
           </tr>
           <tr>
+            <th>280</th>
             <td>Tilichiki</td>
             <td>60.4667</td>
-            <td>166.1</td>
+            <td>166.1000</td>
             <td>-12.51</td>
             <td>93</td>
             <td>17</td>
@@ -3157,10 +3442,11 @@
             <td>1618316334</td>
           </tr>
           <tr>
+            <th>281</th>
             <td>Christchurch</td>
             <td>-43.5333</td>
             <td>172.6333</td>
-            <td>50</td>
+            <td>50.00</td>
             <td>66</td>
             <td>20</td>
             <td>6.91</td>
@@ -3168,6 +3454,7 @@
             <td>1618316239</td>
           </tr>
           <tr>
+            <th>282</th>
             <td>Uvira</td>
             <td>-3.4067</td>
             <td>29.1458</td>
@@ -3179,10 +3466,11 @@
             <td>1618316334</td>
           </tr>
           <tr>
+            <th>283</th>
             <td>Fairbanks</td>
             <td>64.8378</td>
             <td>-147.7164</td>
-            <td>33.8</td>
+            <td>33.80</td>
             <td>64</td>
             <td>90</td>
             <td>3.44</td>
@@ -3190,10 +3478,11 @@
             <td>1618316129</td>
           </tr>
           <tr>
+            <th>284</th>
             <td>Shiloh</td>
             <td>38.5614</td>
             <td>-89.8973</td>
-            <td>50</td>
+            <td>50.00</td>
             <td>93</td>
             <td>90</td>
             <td>6.91</td>
@@ -3201,10 +3490,11 @@
             <td>1618316335</td>
           </tr>
           <tr>
+            <th>285</th>
             <td>Algeciras</td>
             <td>36.1333</td>
             <td>-5.4505</td>
-            <td>62.6</td>
+            <td>62.60</td>
             <td>77</td>
             <td>90</td>
             <td>20.71</td>
@@ -3212,8 +3502,9 @@
             <td>1618316166</td>
           </tr>
           <tr>
-            <td>SÃ£o Miguel do Araguaia</td>
-            <td>-13.275</td>
+            <th>286</th>
+            <td>São Miguel do Araguaia</td>
+            <td>-13.2750</td>
             <td>-50.1628</td>
             <td>78.28</td>
             <td>79</td>
@@ -3223,9 +3514,10 @@
             <td>1618316258</td>
           </tr>
           <tr>
+            <th>287</th>
             <td>Sungai Raya</td>
-            <td>0.7</td>
-            <td>108.9</td>
+            <td>0.7000</td>
+            <td>108.9000</td>
             <td>79.52</td>
             <td>81</td>
             <td>99</td>
@@ -3234,10 +3526,11 @@
             <td>1618316336</td>
           </tr>
           <tr>
+            <th>288</th>
             <td>Zabid</td>
             <td>14.1951</td>
             <td>43.3152</td>
-            <td>91.4</td>
+            <td>91.40</td>
             <td>48</td>
             <td>20</td>
             <td>12.59</td>
@@ -3245,10 +3538,11 @@
             <td>1618316336</td>
           </tr>
           <tr>
+            <th>289</th>
             <td>Longyearbyen</td>
             <td>78.2186</td>
             <td>15.6401</td>
-            <td>14</td>
+            <td>14.00</td>
             <td>62</td>
             <td>75</td>
             <td>18.41</td>
@@ -3256,6 +3550,7 @@
             <td>1618316337</td>
           </tr>
           <tr>
+            <th>290</th>
             <td>Sidi Ali</td>
             <td>36.0998</td>
             <td>0.4206</td>
@@ -3267,10 +3562,11 @@
             <td>1618316337</td>
           </tr>
           <tr>
+            <th>291</th>
             <td>Pisco</td>
-            <td>-13.7</td>
+            <td>-13.7000</td>
             <td>-76.2167</td>
-            <td>64.4</td>
+            <td>64.40</td>
             <td>88</td>
             <td>77</td>
             <td>4.61</td>
@@ -3278,10 +3574,11 @@
             <td>1618316085</td>
           </tr>
           <tr>
+            <th>292</th>
             <td>Nouadhibou</td>
-            <td>20.931</td>
+            <td>20.9310</td>
             <td>-17.0347</td>
-            <td>80.6</td>
+            <td>80.60</td>
             <td>41</td>
             <td>100</td>
             <td>23.02</td>
@@ -3289,10 +3586,11 @@
             <td>1618316338</td>
           </tr>
           <tr>
+            <th>293</th>
             <td>Dubbo</td>
-            <td>-32.25</td>
+            <td>-32.2500</td>
             <td>148.6167</td>
-            <td>48.2</td>
+            <td>48.20</td>
             <td>66</td>
             <td>60</td>
             <td>2.75</td>
@@ -3300,21 +3598,23 @@
             <td>1618316338</td>
           </tr>
           <tr>
+            <th>294</th>
             <td>Geraldton</td>
             <td>-28.7667</td>
-            <td>114.6</td>
-            <td>66.2</td>
+            <td>114.6000</td>
+            <td>66.20</td>
             <td>68</td>
             <td>40</td>
-            <td>13.8</td>
+            <td>13.80</td>
             <td>AU</td>
             <td>1618316339</td>
           </tr>
           <tr>
+            <th>295</th>
             <td>Kununurra</td>
             <td>-15.7667</td>
             <td>128.7333</td>
-            <td>77</td>
+            <td>77.00</td>
             <td>73</td>
             <td>98</td>
             <td>3.44</td>
@@ -3322,10 +3622,11 @@
             <td>1618316339</td>
           </tr>
           <tr>
+            <th>296</th>
             <td>Coyhaique</td>
             <td>-45.5752</td>
             <td>-72.0662</td>
-            <td>50</td>
+            <td>50.00</td>
             <td>76</td>
             <td>75</td>
             <td>5.75</td>
@@ -3333,9 +3634,10 @@
             <td>1618316284</td>
           </tr>
           <tr>
+            <th>297</th>
             <td>Tiznit Province</td>
             <td>29.5833</td>
-            <td>-9.5</td>
+            <td>-9.5000</td>
             <td>79.48</td>
             <td>28</td>
             <td>75</td>
@@ -3344,17 +3646,19 @@
             <td>1618316340</td>
           </tr>
           <tr>
+            <th>298</th>
             <td>Seoul</td>
             <td>37.5683</td>
             <td>126.9778</td>
-            <td>48.2</td>
+            <td>48.20</td>
             <td>65</td>
             <td>20</td>
-            <td>11.5</td>
+            <td>11.50</td>
             <td>KR</td>
             <td>1618316226</td>
           </tr>
           <tr>
+            <th>299</th>
             <td>Guerrero Negro</td>
             <td>27.9769</td>
             <td>-114.0611</td>
@@ -3366,17 +3670,19 @@
             <td>1618316340</td>
           </tr>
           <tr>
+            <th>300</th>
             <td>Rota</td>
             <td>36.6224</td>
             <td>-6.3586</td>
-            <td>75.2</td>
+            <td>75.20</td>
             <td>53</td>
             <td>0</td>
-            <td>11.5</td>
+            <td>11.50</td>
             <td>ES</td>
             <td>1618316340</td>
           </tr>
           <tr>
+            <th>301</th>
             <td>Muborak</td>
             <td>39.2553</td>
             <td>65.1528</td>
@@ -3388,9 +3694,10 @@
             <td>1618316341</td>
           </tr>
           <tr>
+            <th>302</th>
             <td>Japura</td>
             <td>-0.3167</td>
-            <td>102.35</td>
+            <td>102.3500</td>
             <td>80.56</td>
             <td>78</td>
             <td>99</td>
@@ -3399,6 +3706,7 @@
             <td>1618316341</td>
           </tr>
           <tr>
+            <th>303</th>
             <td>Leh</td>
             <td>34.1667</td>
             <td>77.5833</td>
@@ -3410,9 +3718,10 @@
             <td>1618316342</td>
           </tr>
           <tr>
+            <th>304</th>
             <td>Port Blair</td>
             <td>11.6667</td>
-            <td>92.75</td>
+            <td>92.7500</td>
             <td>82.78</td>
             <td>73</td>
             <td>46</td>
@@ -3421,6 +3730,7 @@
             <td>1618316342</td>
           </tr>
           <tr>
+            <th>305</th>
             <td>Yar-Sale</td>
             <td>66.8333</td>
             <td>70.8333</td>
@@ -3432,9 +3742,10 @@
             <td>1618316342</td>
           </tr>
           <tr>
-            <td>AswÄn</td>
+            <th>306</th>
+            <td>Aswān</td>
             <td>24.0934</td>
-            <td>32.907</td>
+            <td>32.9070</td>
             <td>88.66</td>
             <td>7</td>
             <td>27</td>
@@ -3443,9 +3754,10 @@
             <td>1618316343</td>
           </tr>
           <tr>
+            <th>307</th>
             <td>Gaoual</td>
-            <td>11.75</td>
-            <td>-13.2</td>
+            <td>11.7500</td>
+            <td>-13.2000</td>
             <td>100.26</td>
             <td>26</td>
             <td>45</td>
@@ -3454,10 +3766,11 @@
             <td>1618316343</td>
           </tr>
           <tr>
+            <th>308</th>
             <td>Yazd</td>
             <td>31.8972</td>
             <td>54.3675</td>
-            <td>82.4</td>
+            <td>82.40</td>
             <td>15</td>
             <td>90</td>
             <td>6.91</td>
@@ -3465,10 +3778,11 @@
             <td>1618316288</td>
           </tr>
           <tr>
+            <th>309</th>
             <td>Port-Gentil</td>
             <td>-0.7193</td>
             <td>8.7815</td>
-            <td>87.8</td>
+            <td>87.80</td>
             <td>62</td>
             <td>20</td>
             <td>5.75</td>
@@ -3476,21 +3790,23 @@
             <td>1618316344</td>
           </tr>
           <tr>
-            <td>RÃ­o Cuarto</td>
+            <th>310</th>
+            <td>Río Cuarto</td>
             <td>-33.1307</td>
             <td>-64.3499</td>
             <td>60.01</td>
             <td>71</td>
             <td>0</td>
-            <td>2.3</td>
+            <td>2.30</td>
             <td>AR</td>
             <td>1618316344</td>
           </tr>
           <tr>
+            <th>311</th>
             <td>Pusztaszabolcs</td>
             <td>47.1372</td>
-            <td>18.767</td>
-            <td>41</td>
+            <td>18.7670</td>
+            <td>41.00</td>
             <td>87</td>
             <td>100</td>
             <td>5.01</td>
@@ -3498,17 +3814,19 @@
             <td>1618316345</td>
           </tr>
           <tr>
-            <td>FukuechÅ</td>
+            <th>312</th>
+            <td>Fukuechō</td>
             <td>32.6881</td>
             <td>128.8419</td>
-            <td>57.6</td>
+            <td>57.60</td>
             <td>64</td>
             <td>92</td>
-            <td>24.7</td>
+            <td>24.70</td>
             <td>JP</td>
             <td>1618316345</td>
           </tr>
           <tr>
+            <th>313</th>
             <td>Xining</td>
             <td>36.6167</td>
             <td>101.7667</td>
@@ -3520,8 +3838,9 @@
             <td>1618316345</td>
           </tr>
           <tr>
+            <th>314</th>
             <td>Lisala</td>
-            <td>2.15</td>
+            <td>2.1500</td>
             <td>21.5167</td>
             <td>81.18</td>
             <td>61</td>
@@ -3531,6 +3850,7 @@
             <td>1618316346</td>
           </tr>
           <tr>
+            <th>315</th>
             <td>Lodja</td>
             <td>-3.4833</td>
             <td>23.4333</td>
@@ -3542,17 +3862,19 @@
             <td>1618316346</td>
           </tr>
           <tr>
+            <th>316</th>
             <td>Kruisfontein</td>
             <td>-34.0033</td>
             <td>24.7314</td>
-            <td>88</td>
+            <td>88.00</td>
             <td>55</td>
             <td>61</td>
-            <td>3</td>
+            <td>3.00</td>
             <td>ZA</td>
             <td>1618316346</td>
           </tr>
           <tr>
+            <th>317</th>
             <td>Nyurba</td>
             <td>63.2842</td>
             <td>118.3319</td>
@@ -3564,20 +3886,22 @@
             <td>1618316347</td>
           </tr>
           <tr>
-            <td>LÃ¼deritz</td>
+            <th>318</th>
+            <td>Lüderitz</td>
             <td>-26.6481</td>
             <td>15.1594</td>
             <td>90.68</td>
             <td>27</td>
             <td>0</td>
             <td>6.55</td>
-            <td>NA</td>
+            <td>NaN</td>
             <td>1618316347</td>
           </tr>
           <tr>
+            <th>319</th>
             <td>Jiazi</td>
             <td>22.8779</td>
-            <td>116.067</td>
+            <td>116.0670</td>
             <td>75.42</td>
             <td>81</td>
             <td>10</td>
@@ -3586,17 +3910,19 @@
             <td>1618316348</td>
           </tr>
           <tr>
+            <th>320</th>
             <td>Seydi</td>
             <td>39.4816</td>
             <td>62.9137</td>
             <td>74.64</td>
             <td>11</td>
             <td>0</td>
-            <td>7.9</td>
+            <td>7.90</td>
             <td>TM</td>
             <td>1618316348</td>
           </tr>
           <tr>
+            <th>321</th>
             <td>Abu Samrah</td>
             <td>35.3029</td>
             <td>37.1841</td>
@@ -3608,7 +3934,8 @@
             <td>1618316348</td>
           </tr>
           <tr>
-            <td>BahÃ­a Blanca</td>
+            <th>322</th>
+            <td>Bahía Blanca</td>
             <td>-38.7196</td>
             <td>-62.2724</td>
             <td>62.58</td>
@@ -3619,8 +3946,9 @@
             <td>1618316144</td>
           </tr>
           <tr>
+            <th>323</th>
             <td>Ponta Grossa</td>
-            <td>-25.095</td>
+            <td>-25.0950</td>
             <td>-50.1619</td>
             <td>62.33</td>
             <td>90</td>
@@ -3630,10 +3958,11 @@
             <td>1618316349</td>
           </tr>
           <tr>
+            <th>324</th>
             <td>Dushanbe</td>
             <td>38.5577</td>
             <td>68.7797</td>
-            <td>59</td>
+            <td>59.00</td>
             <td>77</td>
             <td>20</td>
             <td>15.66</td>
@@ -3641,10 +3970,11 @@
             <td>1618316230</td>
           </tr>
           <tr>
+            <th>325</th>
             <td>Rawson</td>
             <td>-43.3002</td>
             <td>-65.1023</td>
-            <td>64</td>
+            <td>64.00</td>
             <td>57</td>
             <td>0</td>
             <td>5.19</td>
@@ -3652,10 +3982,11 @@
             <td>1618316349</td>
           </tr>
           <tr>
+            <th>326</th>
             <td>Saint-Pierre</td>
             <td>-21.3393</td>
             <td>55.4781</td>
-            <td>84.2</td>
+            <td>84.20</td>
             <td>70</td>
             <td>75</td>
             <td>20.71</td>
@@ -3663,6 +3994,7 @@
             <td>1618316350</td>
           </tr>
           <tr>
+            <th>327</th>
             <td>Leshukonskoye</td>
             <td>64.8989</td>
             <td>45.7622</td>
@@ -3674,10 +4006,11 @@
             <td>1618316350</td>
           </tr>
           <tr>
+            <th>328</th>
             <td>Makakilo City</td>
             <td>21.3469</td>
             <td>-158.0858</td>
-            <td>69.8</td>
+            <td>69.80</td>
             <td>77</td>
             <td>1</td>
             <td>3.44</td>
@@ -3685,10 +4018,11 @@
             <td>1618316351</td>
           </tr>
           <tr>
+            <th>329</th>
             <td>Riobamba</td>
             <td>-1.6667</td>
             <td>-78.6333</td>
-            <td>66.2</td>
+            <td>66.20</td>
             <td>88</td>
             <td>90</td>
             <td>6.91</td>
@@ -3696,7 +4030,8 @@
             <td>1618316351</td>
           </tr>
           <tr>
-            <td>TutÃ³ia</td>
+            <th>330</th>
+            <td>Tutóia</td>
             <td>-2.7619</td>
             <td>-42.2744</td>
             <td>82.45</td>
@@ -3707,10 +4042,11 @@
             <td>1618316352</td>
           </tr>
           <tr>
-            <td>CamanÃ¡</td>
+            <th>331</th>
+            <td>Camaná</td>
             <td>-16.6228</td>
             <td>-72.7111</td>
-            <td>68</td>
+            <td>68.00</td>
             <td>84</td>
             <td>100</td>
             <td>5.21</td>
@@ -3718,8 +4054,9 @@
             <td>1618316352</td>
           </tr>
           <tr>
+            <th>332</th>
             <td>Jining</td>
-            <td>35.405</td>
+            <td>35.4050</td>
             <td>116.5814</td>
             <td>55.94</td>
             <td>47</td>
@@ -3729,9 +4066,10 @@
             <td>1618316162</td>
           </tr>
           <tr>
-            <td>NÄlÅ«t</td>
+            <th>333</th>
+            <td>Nālūt</td>
             <td>30.3333</td>
-            <td>10.85</td>
+            <td>10.8500</td>
             <td>77.52</td>
             <td>26</td>
             <td>72</td>
@@ -3740,9 +4078,10 @@
             <td>1618316353</td>
           </tr>
           <tr>
+            <th>334</th>
             <td>Tazovsky</td>
             <td>67.4667</td>
-            <td>78.7</td>
+            <td>78.7000</td>
             <td>28.42</td>
             <td>86</td>
             <td>100</td>
@@ -3751,8 +4090,9 @@
             <td>1618316355</td>
           </tr>
           <tr>
+            <th>335</th>
             <td>Laibin</td>
-            <td>23.7</td>
+            <td>23.7000</td>
             <td>109.2667</td>
             <td>76.89</td>
             <td>79</td>
@@ -3762,7 +4102,8 @@
             <td>1618316355</td>
           </tr>
           <tr>
-            <td>KyabÃ©</td>
+            <th>336</th>
+            <td>Kyabé</td>
             <td>9.4515</td>
             <td>18.9449</td>
             <td>103.42</td>
@@ -3773,6 +4114,7 @@
             <td>1618316355</td>
           </tr>
           <tr>
+            <th>337</th>
             <td>Nizhniy Tsasuchey</td>
             <td>50.5167</td>
             <td>115.1333</td>
@@ -3784,6 +4126,7 @@
             <td>1618316356</td>
           </tr>
           <tr>
+            <th>338</th>
             <td>San Felipe</td>
             <td>10.3399</td>
             <td>-68.7425</td>
@@ -3795,10 +4138,11 @@
             <td>1618316357</td>
           </tr>
           <tr>
+            <th>339</th>
             <td>Imbituba</td>
-            <td>-28.24</td>
+            <td>-28.2400</td>
             <td>-48.6703</td>
-            <td>73.4</td>
+            <td>73.40</td>
             <td>60</td>
             <td>40</td>
             <td>9.22</td>
@@ -3806,6 +4150,7 @@
             <td>1618316357</td>
           </tr>
           <tr>
+            <th>340</th>
             <td>Hofn</td>
             <td>64.2539</td>
             <td>-15.2082</td>
@@ -3817,9 +4162,10 @@
             <td>1618316357</td>
           </tr>
           <tr>
+            <th>341</th>
             <td>Khatanga</td>
             <td>71.9667</td>
-            <td>102.5</td>
+            <td>102.5000</td>
             <td>26.24</td>
             <td>86</td>
             <td>82</td>
@@ -3828,10 +4174,11 @@
             <td>1618316358</td>
           </tr>
           <tr>
+            <th>342</th>
             <td>Guarapari</td>
             <td>-20.6667</td>
             <td>-40.4975</td>
-            <td>82.4</td>
+            <td>82.40</td>
             <td>61</td>
             <td>0</td>
             <td>3.44</td>
@@ -3839,6 +4186,7 @@
             <td>1618316358</td>
           </tr>
           <tr>
+            <th>343</th>
             <td>Meulaboh</td>
             <td>4.1363</td>
             <td>96.1285</td>
@@ -3850,10 +4198,11 @@
             <td>1618316359</td>
           </tr>
           <tr>
+            <th>344</th>
             <td>Cabo San Lucas</td>
             <td>22.8909</td>
             <td>-109.9124</td>
-            <td>68</td>
+            <td>68.00</td>
             <td>40</td>
             <td>1</td>
             <td>9.64</td>
@@ -3861,6 +4210,7 @@
             <td>1618316147</td>
           </tr>
           <tr>
+            <th>345</th>
             <td>Shumikha</td>
             <td>55.2261</td>
             <td>63.2961</td>
@@ -3872,6 +4222,7 @@
             <td>1618316359</td>
           </tr>
           <tr>
+            <th>346</th>
             <td>Misantla</td>
             <td>19.9333</td>
             <td>-96.8333</td>
@@ -3883,6 +4234,7 @@
             <td>1618316360</td>
           </tr>
           <tr>
+            <th>347</th>
             <td>Khuzhir</td>
             <td>53.1939</td>
             <td>107.3397</td>
@@ -3894,6 +4246,7 @@
             <td>1618316360</td>
           </tr>
           <tr>
+            <th>348</th>
             <td>Kirakira</td>
             <td>-10.4544</td>
             <td>161.9205</td>
@@ -3905,17 +4258,19 @@
             <td>1618316361</td>
           </tr>
           <tr>
+            <th>349</th>
             <td>Guadalajara</td>
             <td>20.6667</td>
             <td>-103.3333</td>
-            <td>61</td>
+            <td>61.00</td>
             <td>58</td>
             <td>1</td>
-            <td>0.2</td>
+            <td>0.20</td>
             <td>MX</td>
             <td>1618316326</td>
           </tr>
           <tr>
+            <th>350</th>
             <td>Moranbah</td>
             <td>-22.0016</td>
             <td>148.0466</td>
@@ -3927,8 +4282,9 @@
             <td>1618316361</td>
           </tr>
           <tr>
+            <th>351</th>
             <td>Koygorodok</td>
-            <td>60.445</td>
+            <td>60.4450</td>
             <td>50.9968</td>
             <td>45.73</td>
             <td>94</td>
@@ -3938,21 +4294,23 @@
             <td>1618316362</td>
           </tr>
           <tr>
-            <td>PiaÃ§abuÃ§u</td>
+            <th>352</th>
+            <td>Piaçabuçu</td>
             <td>-10.4056</td>
             <td>-36.4344</td>
             <td>82.85</td>
             <td>68</td>
             <td>99</td>
-            <td>5.1</td>
+            <td>5.10</td>
             <td>BR</td>
             <td>1618316362</td>
           </tr>
           <tr>
+            <th>353</th>
             <td>Haapiti</td>
             <td>-17.5667</td>
             <td>-149.8667</td>
-            <td>78.8</td>
+            <td>78.80</td>
             <td>73</td>
             <td>0</td>
             <td>9.22</td>
@@ -3960,6 +4318,7 @@
             <td>1618316363</td>
           </tr>
           <tr>
+            <th>354</th>
             <td>Margate</td>
             <td>51.3813</td>
             <td>1.3862</td>
@@ -3971,6 +4330,7 @@
             <td>1618316363</td>
           </tr>
           <tr>
+            <th>355</th>
             <td>Port Lincoln</td>
             <td>-34.7333</td>
             <td>135.8667</td>
@@ -3982,21 +4342,23 @@
             <td>1618316364</td>
           </tr>
           <tr>
+            <th>356</th>
             <td>Katsuura</td>
             <td>35.1333</td>
-            <td>140.3</td>
+            <td>140.3000</td>
             <td>62.01</td>
             <td>90</td>
             <td>100</td>
-            <td>3</td>
+            <td>3.00</td>
             <td>JP</td>
             <td>1618316364</td>
           </tr>
           <tr>
+            <th>357</th>
             <td>Rupert</td>
             <td>42.6191</td>
             <td>-113.6772</td>
-            <td>35.6</td>
+            <td>35.60</td>
             <td>38</td>
             <td>1</td>
             <td>14.97</td>
@@ -4004,8 +4366,9 @@
             <td>1618316365</td>
           </tr>
           <tr>
+            <th>358</th>
             <td>Karligan</td>
-            <td>14.975</td>
+            <td>14.9750</td>
             <td>122.0456</td>
             <td>80.65</td>
             <td>80</td>
@@ -4015,10 +4378,11 @@
             <td>1618316366</td>
           </tr>
           <tr>
+            <th>359</th>
             <td>Gorodishche</td>
             <td>48.8045</td>
             <td>44.4744</td>
-            <td>75.2</td>
+            <td>75.20</td>
             <td>14</td>
             <td>0</td>
             <td>20.13</td>
@@ -4026,10 +4390,11 @@
             <td>1618316366</td>
           </tr>
           <tr>
+            <th>360</th>
             <td>Beberibe</td>
             <td>-4.1797</td>
             <td>-38.1306</td>
-            <td>81</td>
+            <td>81.00</td>
             <td>89</td>
             <td>75</td>
             <td>10.36</td>
@@ -4037,21 +4402,23 @@
             <td>1618316366</td>
           </tr>
           <tr>
+            <th>361</th>
             <td>Dudinka</td>
             <td>69.4058</td>
             <td>86.1778</td>
             <td>25.59</td>
             <td>90</td>
             <td>100</td>
-            <td>13.2</td>
+            <td>13.20</td>
             <td>RU</td>
             <td>1618316367</td>
           </tr>
           <tr>
-            <td>Praia da VitÃ³ria</td>
+            <th>362</th>
+            <td>Praia da Vitória</td>
             <td>38.7333</td>
             <td>-27.0667</td>
-            <td>68</td>
+            <td>68.00</td>
             <td>77</td>
             <td>40</td>
             <td>14.47</td>
@@ -4059,6 +4426,7 @@
             <td>1618316367</td>
           </tr>
           <tr>
+            <th>363</th>
             <td>Westport</td>
             <td>41.1415</td>
             <td>-73.3579</td>
@@ -4070,10 +4438,11 @@
             <td>1618316367</td>
           </tr>
           <tr>
+            <th>364</th>
             <td>Faya</td>
             <td>18.3851</td>
             <td>42.4509</td>
-            <td>78.8</td>
+            <td>78.80</td>
             <td>41</td>
             <td>20</td>
             <td>20.71</td>
@@ -4081,10 +4450,11 @@
             <td>1618316368</td>
           </tr>
           <tr>
+            <th>365</th>
             <td>Chapais</td>
             <td>49.7834</td>
             <td>-74.8492</td>
-            <td>39.2</td>
+            <td>39.20</td>
             <td>81</td>
             <td>1</td>
             <td>3.44</td>
@@ -4092,9 +4462,10 @@
             <td>1618316264</td>
           </tr>
           <tr>
-            <td>AcaraÃº</td>
+            <th>366</th>
+            <td>Acaraú</td>
             <td>-2.8856</td>
-            <td>-40.12</td>
+            <td>-40.1200</td>
             <td>81.41</td>
             <td>80</td>
             <td>49</td>
@@ -4103,32 +4474,35 @@
             <td>1618316368</td>
           </tr>
           <tr>
+            <th>367</th>
             <td>Kamalpur</td>
-            <td>24.2</td>
+            <td>24.2000</td>
             <td>91.8333</td>
-            <td>93.2</td>
+            <td>93.20</td>
             <td>55</td>
             <td>20</td>
-            <td>2.3</td>
+            <td>2.30</td>
             <td>IN</td>
             <td>1618316369</td>
           </tr>
           <tr>
+            <th>368</th>
             <td>Onnaing</td>
             <td>50.3858</td>
             <td>3.5996</td>
             <td>51.01</td>
             <td>49</td>
             <td>20</td>
-            <td>2.3</td>
+            <td>2.30</td>
             <td>FR</td>
             <td>1618316369</td>
           </tr>
           <tr>
-            <td>BÃ¤rnbach</td>
+            <th>369</th>
+            <td>Bärnbach</td>
             <td>47.0333</td>
-            <td>15.85</td>
-            <td>37</td>
+            <td>15.8500</td>
+            <td>37.00</td>
             <td>84</td>
             <td>100</td>
             <td>8.01</td>
@@ -4136,6 +4510,7 @@
             <td>1618316370</td>
           </tr>
           <tr>
+            <th>370</th>
             <td>Half Moon Bay</td>
             <td>37.4636</td>
             <td>-122.4286</td>
@@ -4147,21 +4522,23 @@
             <td>1618316370</td>
           </tr>
           <tr>
+            <th>371</th>
             <td>Henties Bay</td>
-            <td>-22.116</td>
+            <td>-22.1160</td>
             <td>14.2845</td>
             <td>92.03</td>
             <td>23</td>
             <td>0</td>
             <td>10.65</td>
-            <td>NA</td>
+            <td>NaN</td>
             <td>1618316370</td>
           </tr>
           <tr>
+            <th>372</th>
             <td>Nelson Bay</td>
             <td>-32.7167</td>
-            <td>152.15</td>
-            <td>61</td>
+            <td>152.1500</td>
+            <td>61.00</td>
             <td>88</td>
             <td>36</td>
             <td>8.05</td>
@@ -4169,10 +4546,11 @@
             <td>1618316371</td>
           </tr>
           <tr>
+            <th>373</th>
             <td>Yulara</td>
             <td>-25.2406</td>
             <td>130.9889</td>
-            <td>78.8</td>
+            <td>78.80</td>
             <td>36</td>
             <td>52</td>
             <td>4.61</td>
@@ -4180,8 +4558,9 @@
             <td>1618316372</td>
           </tr>
           <tr>
+            <th>374</th>
             <td>Santa Cruz de la Sierra</td>
-            <td>-17.8</td>
+            <td>-17.8000</td>
             <td>-63.1667</td>
             <td>68.36</td>
             <td>51</td>
@@ -4191,10 +4570,11 @@
             <td>1618316104</td>
           </tr>
           <tr>
+            <th>375</th>
             <td>Culpeper</td>
             <td>38.5004</td>
             <td>-77.9664</td>
-            <td>51.8</td>
+            <td>51.80</td>
             <td>93</td>
             <td>75</td>
             <td>2.66</td>
@@ -4202,10 +4582,11 @@
             <td>1618316206</td>
           </tr>
           <tr>
+            <th>376</th>
             <td>Qasigiannguit</td>
             <td>68.8193</td>
             <td>-51.1922</td>
-            <td>30.2</td>
+            <td>30.20</td>
             <td>93</td>
             <td>90</td>
             <td>12.66</td>
@@ -4213,6 +4594,7 @@
             <td>1618316372</td>
           </tr>
           <tr>
+            <th>377</th>
             <td>Vostok</td>
             <td>46.4856</td>
             <td>135.8833</td>
@@ -4224,6 +4606,7 @@
             <td>1618316373</td>
           </tr>
           <tr>
+            <th>378</th>
             <td>Ahipara</td>
             <td>-35.1667</td>
             <td>173.1667</td>
@@ -4235,6 +4618,7 @@
             <td>1618316373</td>
           </tr>
           <tr>
+            <th>379</th>
             <td>Ulaangom</td>
             <td>49.9811</td>
             <td>92.0667</td>
@@ -4246,10 +4630,11 @@
             <td>1618316374</td>
           </tr>
           <tr>
+            <th>380</th>
             <td>Aklavik</td>
             <td>68.2191</td>
             <td>-135.0107</td>
-            <td>23</td>
+            <td>23.00</td>
             <td>63</td>
             <td>98</td>
             <td>3.44</td>
@@ -4257,6 +4642,7 @@
             <td>1618316374</td>
           </tr>
           <tr>
+            <th>381</th>
             <td>Requena</td>
             <td>39.4883</td>
             <td>-1.1004</td>
@@ -4268,6 +4654,7 @@
             <td>1618316374</td>
           </tr>
           <tr>
+            <th>382</th>
             <td>Cururupu</td>
             <td>-1.8283</td>
             <td>-44.8683</td>
@@ -4279,7 +4666,8 @@
             <td>1618316375</td>
           </tr>
           <tr>
-            <td>EirunepÃ©</td>
+            <th>383</th>
+            <td>Eirunepé</td>
             <td>-6.6603</td>
             <td>-69.8736</td>
             <td>73.67</td>
@@ -4290,10 +4678,11 @@
             <td>1618316324</td>
           </tr>
           <tr>
+            <th>384</th>
             <td>Grindavik</td>
             <td>63.8424</td>
             <td>-22.4338</td>
-            <td>44.6</td>
+            <td>44.60</td>
             <td>81</td>
             <td>75</td>
             <td>9.22</td>
@@ -4301,6 +4690,7 @@
             <td>1618316376</td>
           </tr>
           <tr>
+            <th>385</th>
             <td>Erenhot</td>
             <td>43.6475</td>
             <td>111.9767</td>
@@ -4312,10 +4702,11 @@
             <td>1618316376</td>
           </tr>
           <tr>
-            <td>â€˜Ewa Beach</td>
+            <th>386</th>
+            <td>‘Ewa Beach</td>
             <td>21.3156</td>
             <td>-158.0072</td>
-            <td>69.8</td>
+            <td>69.80</td>
             <td>77</td>
             <td>1</td>
             <td>3.44</td>
@@ -4323,6 +4714,7 @@
             <td>1618316111</td>
           </tr>
           <tr>
+            <th>387</th>
             <td>Marshall</td>
             <td>34.3834</td>
             <td>-86.3333</td>
@@ -4334,10 +4726,11 @@
             <td>1618316377</td>
           </tr>
           <tr>
+            <th>388</th>
             <td>Alofi</td>
             <td>-19.0595</td>
             <td>-169.9187</td>
-            <td>73.4</td>
+            <td>73.40</td>
             <td>94</td>
             <td>40</td>
             <td>6.91</td>
@@ -4345,6 +4738,7 @@
             <td>1618316377</td>
           </tr>
           <tr>
+            <th>389</th>
             <td>Riacho de Santana</td>
             <td>-13.6092</td>
             <td>-42.9389</td>
@@ -4356,6 +4750,7 @@
             <td>1618316377</td>
           </tr>
           <tr>
+            <th>390</th>
             <td>Sibolga</td>
             <td>1.7427</td>
             <td>98.7792</td>
@@ -4367,10 +4762,11 @@
             <td>1618316378</td>
           </tr>
           <tr>
+            <th>391</th>
             <td>Nome</td>
             <td>64.5011</td>
             <td>-165.4064</td>
-            <td>32</td>
+            <td>32.00</td>
             <td>100</td>
             <td>90</td>
             <td>6.91</td>
@@ -4378,6 +4774,7 @@
             <td>1618316379</td>
           </tr>
           <tr>
+            <th>392</th>
             <td>Zhangjiakou Shi Xuanhua Qu</td>
             <td>40.6103</td>
             <td>115.0447</td>
@@ -4389,10 +4786,11 @@
             <td>1618316379</td>
           </tr>
           <tr>
+            <th>393</th>
             <td>Te Anau</td>
             <td>-45.4167</td>
             <td>167.7167</td>
-            <td>50.4</td>
+            <td>50.40</td>
             <td>89</td>
             <td>83</td>
             <td>1.57</td>
@@ -4400,10 +4798,11 @@
             <td>1618316379</td>
           </tr>
           <tr>
+            <th>394</th>
             <td>Brigantine</td>
             <td>39.4101</td>
             <td>-74.3646</td>
-            <td>50</td>
+            <td>50.00</td>
             <td>81</td>
             <td>75</td>
             <td>6.91</td>
@@ -4411,10 +4810,11 @@
             <td>1618316380</td>
           </tr>
           <tr>
+            <th>395</th>
             <td>Mount Gambier</td>
             <td>-37.8333</td>
             <td>140.7667</td>
-            <td>60.8</td>
+            <td>60.80</td>
             <td>77</td>
             <td>90</td>
             <td>19.57</td>
@@ -4422,10 +4822,11 @@
             <td>1618316380</td>
           </tr>
           <tr>
+            <th>396</th>
             <td>Mackay</td>
-            <td>-21.15</td>
-            <td>149.2</td>
-            <td>77</td>
+            <td>-21.1500</td>
+            <td>149.2000</td>
+            <td>77.00</td>
             <td>69</td>
             <td>40</td>
             <td>19.57</td>
@@ -4433,9 +4834,10 @@
             <td>1618316381</td>
           </tr>
           <tr>
-            <td>RoborÃ©</td>
+            <th>397</th>
+            <td>Roboré</td>
             <td>-18.3333</td>
-            <td>-59.75</td>
+            <td>-59.7500</td>
             <td>70.32</td>
             <td>70</td>
             <td>5</td>
@@ -4444,10 +4846,11 @@
             <td>1618316381</td>
           </tr>
           <tr>
+            <th>398</th>
             <td>Whitehorse</td>
             <td>60.7161</td>
             <td>-135.0538</td>
-            <td>32</td>
+            <td>32.00</td>
             <td>64</td>
             <td>75</td>
             <td>20.71</td>
@@ -4455,7 +4858,8 @@
             <td>1618316382</td>
           </tr>
           <tr>
-            <td>SÃ£o Filipe</td>
+            <th>399</th>
+            <td>São Filipe</td>
             <td>14.8961</td>
             <td>-24.4956</td>
             <td>78.85</td>
@@ -4466,9 +4870,10 @@
             <td>1618316382</td>
           </tr>
           <tr>
+            <th>400</th>
             <td>Arrondissement de Melun</td>
-            <td>48.5</td>
-            <td>2.75</td>
+            <td>48.5000</td>
+            <td>2.7500</td>
             <td>51.01</td>
             <td>34</td>
             <td>0</td>
@@ -4477,10 +4882,11 @@
             <td>1618316382</td>
           </tr>
           <tr>
+            <th>401</th>
             <td>Laredo</td>
             <td>27.5064</td>
             <td>-99.5075</td>
-            <td>73.4</td>
+            <td>73.40</td>
             <td>88</td>
             <td>90</td>
             <td>3.44</td>
@@ -4488,10 +4894,11 @@
             <td>1618316383</td>
           </tr>
           <tr>
+            <th>402</th>
             <td>Havre-St-Pierre</td>
             <td>50.2334</td>
             <td>-63.5986</td>
-            <td>39.2</td>
+            <td>39.20</td>
             <td>65</td>
             <td>90</td>
             <td>14.97</td>
@@ -4499,6 +4906,7 @@
             <td>1618316383</td>
           </tr>
           <tr>
+            <th>403</th>
             <td>Mocuba</td>
             <td>-16.8392</td>
             <td>36.9856</td>
@@ -4510,10 +4918,11 @@
             <td>1618316384</td>
           </tr>
           <tr>
+            <th>404</th>
             <td>Hambantota</td>
             <td>6.1241</td>
             <td>81.1185</td>
-            <td>86</td>
+            <td>86.00</td>
             <td>74</td>
             <td>20</td>
             <td>6.91</td>
@@ -4521,10 +4930,11 @@
             <td>1618316384</td>
           </tr>
           <tr>
+            <th>405</th>
             <td>Safaga</td>
             <td>26.7292</td>
             <td>33.9365</td>
-            <td>75.2</td>
+            <td>75.20</td>
             <td>27</td>
             <td>0</td>
             <td>19.57</td>
@@ -4532,6 +4942,7 @@
             <td>1618316195</td>
           </tr>
           <tr>
+            <th>406</th>
             <td>Safi</td>
             <td>32.2994</td>
             <td>-9.2372</td>
@@ -4543,10 +4954,11 @@
             <td>1618316385</td>
           </tr>
           <tr>
+            <th>407</th>
             <td>Gloversville</td>
             <td>43.0528</td>
             <td>-74.3438</td>
-            <td>43</td>
+            <td>43.00</td>
             <td>100</td>
             <td>90</td>
             <td>1.23</td>
@@ -4554,10 +4966,11 @@
             <td>1618316385</td>
           </tr>
           <tr>
+            <th>408</th>
             <td>Oroville</td>
             <td>39.5138</td>
             <td>-121.5564</td>
-            <td>55.4</td>
+            <td>55.40</td>
             <td>54</td>
             <td>1</td>
             <td>6.91</td>
@@ -4565,10 +4978,11 @@
             <td>1618316386</td>
           </tr>
           <tr>
+            <th>409</th>
             <td>Luanda</td>
             <td>-8.8368</td>
             <td>13.2343</td>
-            <td>84.2</td>
+            <td>84.20</td>
             <td>79</td>
             <td>40</td>
             <td>9.22</td>
@@ -4576,6 +4990,7 @@
             <td>1618316100</td>
           </tr>
           <tr>
+            <th>410</th>
             <td>Aurora</td>
             <td>39.7294</td>
             <td>-104.8319</td>
@@ -4587,9 +5002,10 @@
             <td>1618316141</td>
           </tr>
           <tr>
+            <th>411</th>
             <td>Ust-Nera</td>
             <td>64.5667</td>
-            <td>143.2</td>
+            <td>143.2000</td>
             <td>-10.39</td>
             <td>95</td>
             <td>7</td>
@@ -4598,10 +5014,11 @@
             <td>1618316386</td>
           </tr>
           <tr>
+            <th>412</th>
             <td>Lingao</td>
             <td>19.9103</td>
             <td>109.6859</td>
-            <td>78.6</td>
+            <td>78.60</td>
             <td>76</td>
             <td>31</td>
             <td>8.12</td>
@@ -4609,10 +5026,11 @@
             <td>1618316387</td>
           </tr>
           <tr>
+            <th>413</th>
             <td>Vicksburg</td>
             <td>32.3526</td>
             <td>-90.8779</td>
-            <td>57.2</td>
+            <td>57.20</td>
             <td>100</td>
             <td>40</td>
             <td>4.74</td>
@@ -4620,6 +5038,7 @@
             <td>1618316387</td>
           </tr>
           <tr>
+            <th>414</th>
             <td>Shache</td>
             <td>38.4167</td>
             <td>77.2406</td>
@@ -4631,10 +5050,11 @@
             <td>1618316168</td>
           </tr>
           <tr>
+            <th>415</th>
             <td>Elko</td>
             <td>41.0002</td>
             <td>-115.5012</td>
-            <td>36</td>
+            <td>36.00</td>
             <td>43</td>
             <td>75</td>
             <td>6.17</td>
@@ -4642,20 +5062,22 @@
             <td>1618316104</td>
           </tr>
           <tr>
+            <th>416</th>
             <td>Sines Municipality</td>
             <td>37.9562</td>
             <td>-8.8698</td>
-            <td>64</td>
+            <td>64.00</td>
             <td>80</td>
             <td>92</td>
-            <td>7</td>
+            <td>7.00</td>
             <td>PT</td>
             <td>1618316388</td>
           </tr>
           <tr>
-            <td>AsÄƒu</td>
+            <th>417</th>
+            <td>Asău</td>
             <td>46.4333</td>
-            <td>26.4</td>
+            <td>26.4000</td>
             <td>66.99</td>
             <td>20</td>
             <td>32</td>
@@ -4664,10 +5086,11 @@
             <td>1618316389</td>
           </tr>
           <tr>
+            <th>418</th>
             <td>St. George's</td>
             <td>12.0564</td>
             <td>-61.7485</td>
-            <td>82.4</td>
+            <td>82.40</td>
             <td>78</td>
             <td>20</td>
             <td>23.02</td>
@@ -4675,10 +5098,11 @@
             <td>1618316389</td>
           </tr>
           <tr>
+            <th>419</th>
             <td>Haines Junction</td>
             <td>60.7522</td>
             <td>-137.5108</td>
-            <td>30.2</td>
+            <td>30.20</td>
             <td>69</td>
             <td>82</td>
             <td>5.75</td>
@@ -4686,6 +5110,7 @@
             <td>1618316389</td>
           </tr>
           <tr>
+            <th>420</th>
             <td>Flagstaff</td>
             <td>35.1981</td>
             <td>-111.6513</td>
@@ -4697,10 +5122,11 @@
             <td>1618316390</td>
           </tr>
           <tr>
+            <th>421</th>
             <td>Boa Vista</td>
             <td>2.8197</td>
             <td>-60.6733</td>
-            <td>80.6</td>
+            <td>80.60</td>
             <td>83</td>
             <td>40</td>
             <td>9.22</td>
@@ -4708,6 +5134,7 @@
             <td>1618316390</td>
           </tr>
           <tr>
+            <th>422</th>
             <td>Ippy</td>
             <td>6.2679</td>
             <td>21.2247</td>
@@ -4719,10 +5146,11 @@
             <td>1618316391</td>
           </tr>
           <tr>
+            <th>423</th>
             <td>Sohag</td>
-            <td>26.557</td>
+            <td>26.5570</td>
             <td>31.6948</td>
-            <td>80.6</td>
+            <td>80.60</td>
             <td>18</td>
             <td>0</td>
             <td>16.11</td>
@@ -4730,9 +5158,10 @@
             <td>1618316391</td>
           </tr>
           <tr>
+            <th>424</th>
             <td>Oktyabr'skiy</td>
             <td>54.4815</td>
-            <td>53.471</td>
+            <td>53.4710</td>
             <td>55.87</td>
             <td>77</td>
             <td>92</td>
@@ -4741,21 +5170,23 @@
             <td>1618316392</td>
           </tr>
           <tr>
+            <th>425</th>
             <td>Solnechnyy</td>
             <td>50.7214</td>
             <td>136.6319</td>
             <td>17.08</td>
             <td>89</td>
             <td>100</td>
-            <td>10.2</td>
+            <td>10.20</td>
             <td>RU</td>
             <td>1618316392</td>
           </tr>
           <tr>
+            <th>426</th>
             <td>Ballina</td>
             <td>-28.8667</td>
             <td>153.5667</td>
-            <td>55.4</td>
+            <td>55.40</td>
             <td>94</td>
             <td>0</td>
             <td>2.82</td>
@@ -4763,6 +5194,7 @@
             <td>1618316393</td>
           </tr>
           <tr>
+            <th>427</th>
             <td>Itarema</td>
             <td>-2.9248</td>
             <td>-39.9167</td>
@@ -4774,10 +5206,11 @@
             <td>1618316393</td>
           </tr>
           <tr>
+            <th>428</th>
             <td>Nagua</td>
             <td>19.3832</td>
             <td>-69.8474</td>
-            <td>71.6</td>
+            <td>71.60</td>
             <td>88</td>
             <td>40</td>
             <td>4.03</td>
@@ -4785,10 +5218,11 @@
             <td>1618316393</td>
           </tr>
           <tr>
-            <td>PlouzanÃ©</td>
+            <th>429</th>
+            <td>Plouzané</td>
             <td>48.3833</td>
             <td>-4.6167</td>
-            <td>59</td>
+            <td>59.00</td>
             <td>44</td>
             <td>75</td>
             <td>10.36</td>
@@ -4796,10 +5230,11 @@
             <td>1618316394</td>
           </tr>
           <tr>
+            <th>430</th>
             <td>Laas</td>
             <td>46.6166</td>
             <td>10.7002</td>
-            <td>53.6</td>
+            <td>53.60</td>
             <td>47</td>
             <td>0</td>
             <td>12.66</td>
@@ -4807,10 +5242,11 @@
             <td>1618316394</td>
           </tr>
           <tr>
-            <td>MaceiÃ³</td>
+            <th>431</th>
+            <td>Maceió</td>
             <td>-9.6658</td>
             <td>-35.7353</td>
-            <td>80.6</td>
+            <td>80.60</td>
             <td>83</td>
             <td>75</td>
             <td>3.44</td>
@@ -4818,8 +5254,9 @@
             <td>1618316395</td>
           </tr>
           <tr>
+            <th>432</th>
             <td>Buala</td>
-            <td>-8.145</td>
+            <td>-8.1450</td>
             <td>159.5921</td>
             <td>79.84</td>
             <td>78</td>
@@ -4829,6 +5266,7 @@
             <td>1618316395</td>
           </tr>
           <tr>
+            <th>433</th>
             <td>Xai-Xai</td>
             <td>-25.0519</td>
             <td>33.6442</td>
@@ -4840,6 +5278,7 @@
             <td>1618316396</td>
           </tr>
           <tr>
+            <th>434</th>
             <td>Basco</td>
             <td>20.4487</td>
             <td>121.9702</td>
@@ -4851,9 +5290,10 @@
             <td>1618316396</td>
           </tr>
           <tr>
+            <th>435</th>
             <td>Zyryanka</td>
-            <td>65.75</td>
-            <td>150.85</td>
+            <td>65.7500</td>
+            <td>150.8500</td>
             <td>-9.53</td>
             <td>95</td>
             <td>26</td>
@@ -4862,10 +5302,11 @@
             <td>1618316397</td>
           </tr>
           <tr>
+            <th>436</th>
             <td>Ulladulla</td>
-            <td>-35.35</td>
+            <td>-35.3500</td>
             <td>150.4667</td>
-            <td>57.2</td>
+            <td>57.20</td>
             <td>77</td>
             <td>94</td>
             <td>6.91</td>
@@ -4873,20 +5314,22 @@
             <td>1618316397</td>
           </tr>
           <tr>
+            <th>437</th>
             <td>Tateyama</td>
             <td>34.9833</td>
             <td>139.8667</td>
             <td>62.01</td>
             <td>90</td>
             <td>100</td>
-            <td>3</td>
+            <td>3.00</td>
             <td>JP</td>
             <td>1618316397</td>
           </tr>
           <tr>
+            <th>438</th>
             <td>Ponorogo</td>
             <td>-7.8685</td>
-            <td>111.462</td>
+            <td>111.4620</td>
             <td>75.96</td>
             <td>91</td>
             <td>63</td>
@@ -4895,10 +5338,11 @@
             <td>1618316398</td>
           </tr>
           <tr>
+            <th>439</th>
             <td>Camacha</td>
             <td>33.0833</td>
             <td>-16.3333</td>
-            <td>69.8</td>
+            <td>69.80</td>
             <td>83</td>
             <td>75</td>
             <td>10.36</td>
@@ -4906,10 +5350,11 @@
             <td>1618316398</td>
           </tr>
           <tr>
+            <th>440</th>
             <td>Necochea</td>
             <td>-38.5473</td>
             <td>-58.7368</td>
-            <td>61</td>
+            <td>61.00</td>
             <td>80</td>
             <td>0</td>
             <td>1.99</td>
@@ -4917,10 +5362,11 @@
             <td>1618316273</td>
           </tr>
           <tr>
+            <th>441</th>
             <td>Coquimbo</td>
             <td>-29.9533</td>
             <td>-71.3436</td>
-            <td>53.6</td>
+            <td>53.60</td>
             <td>100</td>
             <td>90</td>
             <td>6.91</td>
@@ -4928,6 +5374,7 @@
             <td>1618316303</td>
           </tr>
           <tr>
+            <th>442</th>
             <td>Sirte</td>
             <td>31.2089</td>
             <td>16.5887</td>
@@ -4939,10 +5386,11 @@
             <td>1618316399</td>
           </tr>
           <tr>
-            <td>JoÃ£o CÃ¢mara</td>
+            <th>443</th>
+            <td>João Câmara</td>
             <td>-5.5375</td>
             <td>-35.8197</td>
-            <td>82.4</td>
+            <td>82.40</td>
             <td>83</td>
             <td>20</td>
             <td>6.91</td>
@@ -4950,8 +5398,9 @@
             <td>1618316400</td>
           </tr>
           <tr>
+            <th>444</th>
             <td>Laguna</td>
-            <td>38.421</td>
+            <td>38.4210</td>
             <td>-121.4238</td>
             <td>51.01</td>
             <td>76</td>
@@ -4961,9 +5410,10 @@
             <td>1618316401</td>
           </tr>
           <tr>
+            <th>445</th>
             <td>Maniitsoq</td>
             <td>65.4167</td>
-            <td>-52.9</td>
+            <td>-52.9000</td>
             <td>31.89</td>
             <td>73</td>
             <td>98</td>
@@ -4972,10 +5422,11 @@
             <td>1618316401</td>
           </tr>
           <tr>
+            <th>446</th>
             <td>Farim</td>
             <td>12.4839</td>
             <td>-15.2217</td>
-            <td>89.6</td>
+            <td>89.60</td>
             <td>45</td>
             <td>0</td>
             <td>4.61</td>
@@ -4983,21 +5434,23 @@
             <td>1618316402</td>
           </tr>
           <tr>
-            <td>GrigiÅ¡kÄ—s</td>
+            <th>447</th>
+            <td>Grigiškės</td>
             <td>54.6833</td>
             <td>25.0833</td>
-            <td>43</td>
+            <td>43.00</td>
             <td>87</td>
             <td>90</td>
-            <td>13.8</td>
+            <td>13.80</td>
             <td>LT</td>
             <td>1618316402</td>
           </tr>
           <tr>
+            <th>448</th>
             <td>Savannah Bight</td>
-            <td>16.45</td>
-            <td>-85.85</td>
-            <td>81</td>
+            <td>16.4500</td>
+            <td>-85.8500</td>
+            <td>81.00</td>
             <td>88</td>
             <td>75</td>
             <td>23.69</td>
@@ -5005,8 +5458,9 @@
             <td>1618316403</td>
           </tr>
           <tr>
+            <th>449</th>
             <td>Richards Bay</td>
-            <td>-28.783</td>
+            <td>-28.7830</td>
             <td>32.0377</td>
             <td>80.92</td>
             <td>71</td>
@@ -5016,10 +5470,11 @@
             <td>1618316403</td>
           </tr>
           <tr>
+            <th>450</th>
             <td>Oistins</td>
             <td>13.0667</td>
             <td>-59.5333</td>
-            <td>82.4</td>
+            <td>82.40</td>
             <td>65</td>
             <td>20</td>
             <td>14.97</td>
@@ -5027,10 +5482,11 @@
             <td>1618316324</td>
           </tr>
           <tr>
+            <th>451</th>
             <td>Ukiah</td>
             <td>39.1502</td>
             <td>-123.2078</td>
-            <td>46</td>
+            <td>46.00</td>
             <td>70</td>
             <td>1</td>
             <td>4.54</td>
@@ -5038,6 +5494,7 @@
             <td>1618316404</td>
           </tr>
           <tr>
+            <th>452</th>
             <td>Great Yarmouth</td>
             <td>52.6083</td>
             <td>1.7305</td>
@@ -5049,10 +5506,11 @@
             <td>1618316405</td>
           </tr>
           <tr>
+            <th>453</th>
             <td>Koz'modem'yansk</td>
             <td>56.3367</td>
             <td>46.5711</td>
-            <td>68</td>
+            <td>68.00</td>
             <td>34</td>
             <td>0</td>
             <td>13.42</td>
@@ -5060,6 +5518,7 @@
             <td>1618316406</td>
           </tr>
           <tr>
+            <th>454</th>
             <td>Maxixe</td>
             <td>-23.8597</td>
             <td>35.3472</td>
@@ -5071,10 +5530,11 @@
             <td>1618316406</td>
           </tr>
           <tr>
+            <th>455</th>
             <td>Mahina</td>
             <td>-17.5065</td>
-            <td>-149.489</td>
-            <td>78.8</td>
+            <td>-149.4890</td>
+            <td>78.80</td>
             <td>73</td>
             <td>0</td>
             <td>9.22</td>
@@ -5082,10 +5542,11 @@
             <td>1618316406</td>
           </tr>
           <tr>
+            <th>456</th>
             <td>Konya Province</td>
             <td>38.1667</td>
-            <td>32.5</td>
-            <td>50</td>
+            <td>32.5000</td>
+            <td>50.00</td>
             <td>50</td>
             <td>40</td>
             <td>3.44</td>
@@ -5093,10 +5554,11 @@
             <td>1618316407</td>
           </tr>
           <tr>
+            <th>457</th>
             <td>Zavyalovo</td>
             <td>54.5053</td>
             <td>82.4484</td>
-            <td>46.4</td>
+            <td>46.40</td>
             <td>46</td>
             <td>20</td>
             <td>15.66</td>
@@ -5104,6 +5566,7 @@
             <td>1618316407</td>
           </tr>
           <tr>
+            <th>458</th>
             <td>Port Macquarie</td>
             <td>-31.4333</td>
             <td>152.9167</td>
@@ -5115,6 +5578,7 @@
             <td>1618316408</td>
           </tr>
           <tr>
+            <th>459</th>
             <td>Ginda</td>
             <td>30.6945</td>
             <td>78.4932</td>
@@ -5126,10 +5590,11 @@
             <td>1618316408</td>
           </tr>
           <tr>
+            <th>460</th>
             <td>Bemidji</td>
             <td>47.4736</td>
             <td>-94.8803</td>
-            <td>27</td>
+            <td>27.00</td>
             <td>93</td>
             <td>90</td>
             <td>14.97</td>
@@ -5137,21 +5602,23 @@
             <td>1618316283</td>
           </tr>
           <tr>
+            <th>461</th>
             <td>Mongoumba</td>
             <td>3.6415</td>
             <td>18.5936</td>
             <td>90.25</td>
             <td>43</td>
             <td>91</td>
-            <td>4.7</td>
+            <td>4.70</td>
             <td>CF</td>
             <td>1618316409</td>
           </tr>
           <tr>
+            <th>462</th>
             <td>Liverpool</td>
             <td>53.4106</td>
             <td>-2.9779</td>
-            <td>54</td>
+            <td>54.00</td>
             <td>54</td>
             <td>20</td>
             <td>3.44</td>
@@ -5159,21 +5626,23 @@
             <td>1618316409</td>
           </tr>
           <tr>
+            <th>463</th>
             <td>Gweta</td>
             <td>-20.1833</td>
             <td>25.2333</td>
             <td>85.39</td>
             <td>21</td>
             <td>0</td>
-            <td>11.3</td>
+            <td>11.30</td>
             <td>BW</td>
             <td>1618316410</td>
           </tr>
           <tr>
+            <th>464</th>
             <td>Rosetta</td>
             <td>31.4044</td>
             <td>30.4164</td>
-            <td>69.8</td>
+            <td>69.80</td>
             <td>46</td>
             <td>0</td>
             <td>8.05</td>
@@ -5181,21 +5650,23 @@
             <td>1618316411</td>
           </tr>
           <tr>
+            <th>465</th>
             <td>La Sarre</td>
             <td>48.8002</td>
             <td>-79.1996</td>
             <td>48.25</td>
             <td>81</td>
             <td>100</td>
-            <td>8.9</td>
+            <td>8.90</td>
             <td>CA</td>
             <td>1618316411</td>
           </tr>
           <tr>
+            <th>466</th>
             <td>Severnyy</td>
-            <td>50.677</td>
+            <td>50.6770</td>
             <td>36.5532</td>
-            <td>64.4</td>
+            <td>64.40</td>
             <td>45</td>
             <td>0</td>
             <td>13.42</td>
@@ -5203,9 +5674,10 @@
             <td>1618316411</td>
           </tr>
           <tr>
+            <th>467</th>
             <td>Okhotsk</td>
             <td>59.3833</td>
-            <td>143.3</td>
+            <td>143.3000</td>
             <td>9.05</td>
             <td>95</td>
             <td>83</td>
@@ -5214,6 +5686,7 @@
             <td>1618316412</td>
           </tr>
           <tr>
+            <th>468</th>
             <td>Lorengau</td>
             <td>-2.0226</td>
             <td>147.2712</td>
@@ -5225,21 +5698,23 @@
             <td>1618316412</td>
           </tr>
           <tr>
+            <th>469</th>
             <td>Santa Maria</td>
             <td>-29.6842</td>
             <td>-53.8069</td>
-            <td>57.2</td>
+            <td>57.20</td>
             <td>100</td>
             <td>90</td>
-            <td>7.7</td>
+            <td>7.70</td>
             <td>BR</td>
             <td>1618316412</td>
           </tr>
           <tr>
-            <td>IbirubÃ¡</td>
+            <th>470</th>
+            <td>Ibirubá</td>
             <td>-28.6275</td>
             <td>-53.0897</td>
-            <td>62.4</td>
+            <td>62.40</td>
             <td>73</td>
             <td>33</td>
             <td>10.51</td>
@@ -5247,10 +5722,11 @@
             <td>1618316413</td>
           </tr>
           <tr>
+            <th>471</th>
             <td>Two Hills</td>
             <td>53.7169</td>
             <td>-111.7518</td>
-            <td>23</td>
+            <td>23.00</td>
             <td>68</td>
             <td>2</td>
             <td>8.05</td>
@@ -5258,6 +5734,7 @@
             <td>1618316413</td>
           </tr>
           <tr>
+            <th>472</th>
             <td>Holiday</td>
             <td>28.1878</td>
             <td>-82.7395</td>
@@ -5269,6 +5746,7 @@
             <td>1618316414</td>
           </tr>
           <tr>
+            <th>473</th>
             <td>Zhumadian</td>
             <td>32.9794</td>
             <td>114.0294</td>
@@ -5280,6 +5758,7 @@
             <td>1618316414</td>
           </tr>
           <tr>
+            <th>474</th>
             <td>Leningradskiy</td>
             <td>69.3833</td>
             <td>178.4167</td>
@@ -5291,21 +5770,23 @@
             <td>1618316415</td>
           </tr>
           <tr>
+            <th>475</th>
             <td>Alginet</td>
             <td>39.2667</td>
             <td>-0.4667</td>
             <td>66.99</td>
             <td>73</td>
             <td>98</td>
-            <td>3</td>
+            <td>3.00</td>
             <td>ES</td>
             <td>1618316415</td>
           </tr>
           <tr>
+            <th>476</th>
             <td>Arys</td>
             <td>42.4252</td>
-            <td>68.795</td>
-            <td>66.2</td>
+            <td>68.7950</td>
+            <td>66.20</td>
             <td>45</td>
             <td>0</td>
             <td>6.71</td>
@@ -5313,10 +5794,11 @@
             <td>1618316416</td>
           </tr>
           <tr>
+            <th>477</th>
             <td>Avera</td>
-            <td>33.194</td>
+            <td>33.1940</td>
             <td>-82.5271</td>
-            <td>54</td>
+            <td>54.00</td>
             <td>94</td>
             <td>1</td>
             <td>5.61</td>
@@ -5324,8 +5806,9 @@
             <td>1618316416</td>
           </tr>
           <tr>
+            <th>478</th>
             <td>Orange</td>
-            <td>33.7</td>
+            <td>33.7000</td>
             <td>-117.7675</td>
             <td>57.99</td>
             <td>82</td>
@@ -5335,6 +5818,7 @@
             <td>1618316123</td>
           </tr>
           <tr>
+            <th>479</th>
             <td>Kamenka</td>
             <td>51.3223</td>
             <td>42.7678</td>
@@ -5346,10 +5830,11 @@
             <td>1618316417</td>
           </tr>
           <tr>
+            <th>480</th>
             <td>Skibbereen</td>
-            <td>51.55</td>
+            <td>51.5500</td>
             <td>-9.2667</td>
-            <td>48.2</td>
+            <td>48.20</td>
             <td>81</td>
             <td>75</td>
             <td>9.22</td>
@@ -5357,10 +5842,11 @@
             <td>1618316418</td>
           </tr>
           <tr>
-            <td>YerbogachÃ«n</td>
+            <th>481</th>
+            <td>Yerbogachën</td>
             <td>61.2767</td>
             <td>108.0108</td>
-            <td>27.1</td>
+            <td>27.10</td>
             <td>82</td>
             <td>69</td>
             <td>8.34</td>
@@ -5368,6 +5854,7 @@
             <td>1618316418</td>
           </tr>
           <tr>
+            <th>482</th>
             <td>Cayenne</td>
             <td>4.9333</td>
             <td>-52.3333</td>
@@ -5379,6 +5866,7 @@
             <td>1618316418</td>
           </tr>
           <tr>
+            <th>483</th>
             <td>Metro</td>
             <td>-5.1131</td>
             <td>105.3067</td>
@@ -5390,8 +5878,9 @@
             <td>1618316419</td>
           </tr>
           <tr>
+            <th>484</th>
             <td>Muisne</td>
-            <td>0.6</td>
+            <td>0.6000</td>
             <td>-80.0333</td>
             <td>77.07</td>
             <td>86</td>
@@ -5401,21 +5890,23 @@
             <td>1618316419</td>
           </tr>
           <tr>
+            <th>485</th>
             <td>Aksu</td>
             <td>41.1231</td>
             <td>80.2644</td>
-            <td>64</td>
+            <td>64.00</td>
             <td>23</td>
             <td>82</td>
-            <td>5.3</td>
+            <td>5.30</td>
             <td>CN</td>
             <td>1618316420</td>
           </tr>
           <tr>
+            <th>486</th>
             <td>Bardejov</td>
             <td>49.2918</td>
             <td>21.2727</td>
-            <td>36</td>
+            <td>36.00</td>
             <td>97</td>
             <td>100</td>
             <td>7.65</td>
@@ -5423,10 +5914,11 @@
             <td>1618316420</td>
           </tr>
           <tr>
-            <td>TromsÃ¸</td>
+            <th>487</th>
+            <td>Tromsø</td>
             <td>69.6496</td>
-            <td>18.957</td>
-            <td>33.8</td>
+            <td>18.9570</td>
+            <td>33.80</td>
             <td>64</td>
             <td>75</td>
             <td>12.66</td>
@@ -5434,10 +5926,11 @@
             <td>1618316421</td>
           </tr>
           <tr>
+            <th>488</th>
             <td>Kazygurt</td>
             <td>41.7589</td>
             <td>69.3864</td>
-            <td>69.8</td>
+            <td>69.80</td>
             <td>32</td>
             <td>0</td>
             <td>4.61</td>
@@ -5445,17 +5938,19 @@
             <td>1618316421</td>
           </tr>
           <tr>
+            <th>489</th>
             <td>Tuatapere</td>
             <td>-46.1333</td>
             <td>167.6833</td>
             <td>53.01</td>
             <td>97</td>
             <td>96</td>
-            <td>4</td>
+            <td>4.00</td>
             <td>NZ</td>
             <td>1618316421</td>
           </tr>
           <tr>
+            <th>490</th>
             <td>Jalu</td>
             <td>29.0331</td>
             <td>21.5482</td>
@@ -5467,6 +5962,7 @@
             <td>1618316422</td>
           </tr>
           <tr>
+            <th>491</th>
             <td>Ordynskoye</td>
             <td>54.3656</td>
             <td>81.8994</td>
@@ -5478,8 +5974,9 @@
             <td>1618316422</td>
           </tr>
           <tr>
-            <td>SÄ«rjÄn</td>
-            <td>29.452</td>
+            <th>492</th>
+            <td>Sīrjān</td>
+            <td>29.4520</td>
             <td>55.6814</td>
             <td>71.28</td>
             <td>23</td>
@@ -5489,9 +5986,10 @@
             <td>1618316423</td>
           </tr>
           <tr>
+            <th>493</th>
             <td>Severo-Kuril'sk</td>
             <td>50.6789</td>
-            <td>156.125</td>
+            <td>156.1250</td>
             <td>35.56</td>
             <td>86</td>
             <td>100</td>
@@ -5500,6 +5998,7 @@
             <td>1618316423</td>
           </tr>
           <tr>
+            <th>494</th>
             <td>Kiyasovo</td>
             <td>56.3491</td>
             <td>53.1244</td>
@@ -5511,10 +6010,11 @@
             <td>1618316424</td>
           </tr>
           <tr>
+            <th>495</th>
             <td>Itoman</td>
             <td>26.1247</td>
             <td>127.6694</td>
-            <td>71.6</td>
+            <td>71.60</td>
             <td>88</td>
             <td>75</td>
             <td>14.97</td>
@@ -5522,10 +6022,11 @@
             <td>1618316424</td>
           </tr>
           <tr>
+            <th>496</th>
             <td>Humberto de Campos</td>
             <td>-2.5983</td>
             <td>-43.4611</td>
-            <td>82.6</td>
+            <td>82.60</td>
             <td>79</td>
             <td>95</td>
             <td>7.61</td>
@@ -5533,10 +6034,11 @@
             <td>1618316425</td>
           </tr>
           <tr>
+            <th>497</th>
             <td>Gravdal</td>
             <td>68.1214</td>
             <td>13.5031</td>
-            <td>39.2</td>
+            <td>39.20</td>
             <td>52</td>
             <td>40</td>
             <td>6.91</td>
@@ -5544,10 +6046,11 @@
             <td>1618316425</td>
           </tr>
           <tr>
+            <th>498</th>
             <td>Virginia Beach</td>
             <td>36.8529</td>
-            <td>-75.978</td>
-            <td>53.6</td>
+            <td>-75.9780</td>
+            <td>53.60</td>
             <td>71</td>
             <td>75</td>
             <td>12.66</td>
@@ -5555,10 +6058,11 @@
             <td>1618316129</td>
           </tr>
           <tr>
+            <th>499</th>
             <td>Grand Falls</td>
             <td>47.0461</td>
             <td>-67.7418</td>
-            <td>46.4</td>
+            <td>46.40</td>
             <td>57</td>
             <td>1</td>
             <td>9.22</td>
@@ -5566,6 +6070,7 @@
             <td>1618316285</td>
           </tr>
           <tr>
+            <th>500</th>
             <td>Mergen</td>
             <td>49.1833</td>
             <td>125.2167</td>
@@ -5577,6 +6082,7 @@
             <td>1618316234</td>
           </tr>
           <tr>
+            <th>501</th>
             <td>Yarensk</td>
             <td>62.1675</td>
             <td>49.0916</td>
@@ -5588,10 +6094,11 @@
             <td>1618316426</td>
           </tr>
           <tr>
-            <td>ViranÅŸehir</td>
+            <th>502</th>
+            <td>Viranşehir</td>
             <td>37.2353</td>
             <td>39.7631</td>
-            <td>61.7</td>
+            <td>61.70</td>
             <td>34</td>
             <td>27</td>
             <td>9.84</td>
@@ -5599,9 +6106,10 @@
             <td>1618316427</td>
           </tr>
           <tr>
-            <td>RÃ­o Viejo</td>
+            <th>503</th>
+            <td>Río Viejo</td>
             <td>8.5874</td>
-            <td>-73.839</td>
+            <td>-73.8390</td>
             <td>78.03</td>
             <td>90</td>
             <td>100</td>
@@ -5610,6 +6118,7 @@
             <td>1618316427</td>
           </tr>
           <tr>
+            <th>504</th>
             <td>Hualmay</td>
             <td>-11.0964</td>
             <td>-77.6139</td>
@@ -5621,10 +6130,11 @@
             <td>1618316428</td>
           </tr>
           <tr>
+            <th>505</th>
             <td>Iquitos</td>
             <td>-3.7481</td>
             <td>-73.2472</td>
-            <td>75.2</td>
+            <td>75.20</td>
             <td>94</td>
             <td>75</td>
             <td>1.12</td>
@@ -5632,6 +6142,7 @@
             <td>1618316428</td>
           </tr>
           <tr>
+            <th>506</th>
             <td>Daugavpils</td>
             <td>55.8833</td>
             <td>26.5333</td>
@@ -5643,6 +6154,7 @@
             <td>1618316428</td>
           </tr>
           <tr>
+            <th>507</th>
             <td>Chul'man</td>
             <td>56.8479</td>
             <td>124.9104</td>
@@ -5654,8 +6166,9 @@
             <td>1618316429</td>
           </tr>
           <tr>
+            <th>508</th>
             <td>Taltal</td>
-            <td>-25.4</td>
+            <td>-25.4000</td>
             <td>-70.4833</td>
             <td>65.71</td>
             <td>68</td>
@@ -5665,9 +6178,10 @@
             <td>1618316429</td>
           </tr>
           <tr>
+            <th>509</th>
             <td>Nemuro</td>
             <td>43.3236</td>
-            <td>145.575</td>
+            <td>145.5750</td>
             <td>44.17</td>
             <td>88</td>
             <td>100</td>
@@ -5676,6 +6190,7 @@
             <td>1618316430</td>
           </tr>
           <tr>
+            <th>510</th>
             <td>Jaciara</td>
             <td>-15.9653</td>
             <td>-54.9683</td>
@@ -5687,6 +6202,7 @@
             <td>1618316136</td>
           </tr>
           <tr>
+            <th>511</th>
             <td>Ust'-Ilimsk</td>
             <td>58.0006</td>
             <td>102.6619</td>
@@ -5698,6 +6214,7 @@
             <td>1618316430</td>
           </tr>
           <tr>
+            <th>512</th>
             <td>Mayor Pablo Lagerenza</td>
             <td>-19.9309</td>
             <td>-60.7718</td>
@@ -5709,9 +6226,10 @@
             <td>1618316431</td>
           </tr>
           <tr>
+            <th>513</th>
             <td>Visby</td>
             <td>57.6409</td>
-            <td>18.296</td>
+            <td>18.2960</td>
             <td>46.99</td>
             <td>61</td>
             <td>40</td>
@@ -5720,6 +6238,7 @@
             <td>1618316431</td>
           </tr>
           <tr>
+            <th>514</th>
             <td>Touba</td>
             <td>8.2833</td>
             <td>-7.6833</td>
@@ -5731,7 +6250,8 @@
             <td>1618316432</td>
           </tr>
           <tr>
-            <td>AynÃ­</td>
+            <th>515</th>
+            <td>Ayní</td>
             <td>39.3941</td>
             <td>68.5377</td>
             <td>51.89</td>
@@ -5742,10 +6262,11 @@
             <td>1618316432</td>
           </tr>
           <tr>
+            <th>516</th>
             <td>Chaves</td>
             <td>33.3834</td>
             <td>-104.4505</td>
-            <td>45</td>
+            <td>45.00</td>
             <td>49</td>
             <td>1</td>
             <td>6.91</td>
@@ -5753,6 +6274,7 @@
             <td>1618316433</td>
           </tr>
           <tr>
+            <th>517</th>
             <td>Bariloche</td>
             <td>-41.1456</td>
             <td>-71.3082</td>
@@ -5764,10 +6286,11 @@
             <td>1618316433</td>
           </tr>
           <tr>
-            <td>NajrÄn</td>
+            <th>518</th>
+            <td>Najrān</td>
             <td>17.4924</td>
             <td>44.1277</td>
-            <td>95</td>
+            <td>95.00</td>
             <td>26</td>
             <td>40</td>
             <td>5.75</td>
@@ -5775,9 +6298,10 @@
             <td>1618316189</td>
           </tr>
           <tr>
+            <th>519</th>
             <td>Kavaratti</td>
             <td>10.5669</td>
-            <td>72.642</td>
+            <td>72.6420</td>
             <td>84.43</td>
             <td>65</td>
             <td>25</td>
@@ -5786,21 +6310,23 @@
             <td>1618316434</td>
           </tr>
           <tr>
+            <th>520</th>
             <td>Sharjah city</td>
             <td>25.3573</td>
             <td>55.4033</td>
-            <td>93.2</td>
+            <td>93.20</td>
             <td>33</td>
             <td>0</td>
-            <td>13.8</td>
+            <td>13.80</td>
             <td>AE</td>
             <td>1618316435</td>
           </tr>
           <tr>
+            <th>521</th>
             <td>Paita</td>
             <td>-5.0892</td>
             <td>-81.1144</td>
-            <td>69.8</td>
+            <td>69.80</td>
             <td>83</td>
             <td>40</td>
             <td>17.27</td>
@@ -5808,10 +6334,11 @@
             <td>1618316435</td>
           </tr>
           <tr>
+            <th>522</th>
             <td>Tautira</td>
             <td>-17.7333</td>
-            <td>-149.15</td>
-            <td>78.8</td>
+            <td>-149.1500</td>
+            <td>78.80</td>
             <td>73</td>
             <td>0</td>
             <td>9.22</td>
@@ -5819,10 +6346,11 @@
             <td>1618316436</td>
           </tr>
           <tr>
+            <th>523</th>
             <td>Tsimmerbude</td>
-            <td>54.675</td>
+            <td>54.6750</td>
             <td>20.1347</td>
-            <td>45</td>
+            <td>45.00</td>
             <td>65</td>
             <td>40</td>
             <td>15.66</td>
@@ -5830,21 +6358,23 @@
             <td>1618316436</td>
           </tr>
           <tr>
-            <td>Presidencia Roque SÃ¡enz PeÃ±a</td>
+            <th>524</th>
+            <td>Presidencia Roque Sáenz Peña</td>
             <td>-26.7852</td>
             <td>-60.4388</td>
             <td>66.99</td>
             <td>77</td>
             <td>29</td>
-            <td>4</td>
+            <td>4.00</td>
             <td>AR</td>
             <td>1618316436</td>
           </tr>
           <tr>
-            <td>Acapulco de JuÃ¡rez</td>
+            <th>525</th>
+            <td>Acapulco de Juárez</td>
             <td>16.8634</td>
             <td>-99.8901</td>
-            <td>73.4</td>
+            <td>73.40</td>
             <td>88</td>
             <td>20</td>
             <td>3.44</td>
@@ -5852,10 +6382,11 @@
             <td>1618316204</td>
           </tr>
           <tr>
+            <th>526</th>
             <td>Petropavlovsk-Kamchatskiy</td>
             <td>53.0452</td>
             <td>158.6483</td>
-            <td>32</td>
+            <td>32.00</td>
             <td>100</td>
             <td>75</td>
             <td>2.24</td>
@@ -5863,10 +6394,11 @@
             <td>1618316437</td>
           </tr>
           <tr>
+            <th>527</th>
             <td>Kamaishi</td>
             <td>39.2667</td>
             <td>141.8833</td>
-            <td>56.3</td>
+            <td>56.30</td>
             <td>94</td>
             <td>100</td>
             <td>20.96</td>
@@ -5874,10 +6406,11 @@
             <td>1618316437</td>
           </tr>
           <tr>
+            <th>528</th>
             <td>Saryagash</td>
             <td>41.4511</td>
             <td>69.1701</td>
-            <td>69.8</td>
+            <td>69.80</td>
             <td>32</td>
             <td>0</td>
             <td>4.61</td>
@@ -5885,21 +6418,23 @@
             <td>1618316438</td>
           </tr>
           <tr>
+            <th>529</th>
             <td>Rio Grande</td>
-            <td>-32.035</td>
+            <td>-32.0350</td>
             <td>-52.0986</td>
-            <td>66.2</td>
+            <td>66.20</td>
             <td>82</td>
             <td>0</td>
-            <td>2.3</td>
+            <td>2.30</td>
             <td>BR</td>
             <td>1618316438</td>
           </tr>
           <tr>
+            <th>530</th>
             <td>Husavik</td>
             <td>66.0449</td>
             <td>-17.3389</td>
-            <td>46.4</td>
+            <td>46.40</td>
             <td>53</td>
             <td>20</td>
             <td>19.57</td>
@@ -5907,7 +6442,8 @@
             <td>1618316439</td>
           </tr>
           <tr>
-            <td>SÃ¶derhamn</td>
+            <th>531</th>
+            <td>Söderhamn</td>
             <td>61.3037</td>
             <td>17.0592</td>
             <td>44.01</td>
@@ -5918,6 +6454,7 @@
             <td>1618316439</td>
           </tr>
           <tr>
+            <th>532</th>
             <td>Kargasok</td>
             <td>59.0556</td>
             <td>80.8572</td>
@@ -5929,10 +6466,11 @@
             <td>1618316440</td>
           </tr>
           <tr>
+            <th>533</th>
             <td>Severodvinsk</td>
             <td>64.5635</td>
             <td>39.8302</td>
-            <td>55.4</td>
+            <td>55.40</td>
             <td>50</td>
             <td>20</td>
             <td>6.71</td>
@@ -5940,10 +6478,11 @@
             <td>1618316440</td>
           </tr>
           <tr>
+            <th>534</th>
             <td>Druskininkai</td>
             <td>54.0167</td>
             <td>23.9667</td>
-            <td>41</td>
+            <td>41.00</td>
             <td>75</td>
             <td>90</td>
             <td>15.66</td>
@@ -5951,6 +6490,7 @@
             <td>1618316440</td>
           </tr>
           <tr>
+            <th>535</th>
             <td>Kang</td>
             <td>-23.6752</td>
             <td>22.7876</td>
@@ -5962,6 +6502,7 @@
             <td>1618316441</td>
           </tr>
           <tr>
+            <th>536</th>
             <td>Plettenberg Bay</td>
             <td>-34.0527</td>
             <td>23.3716</td>
@@ -5973,6 +6514,7 @@
             <td>1618316441</td>
           </tr>
           <tr>
+            <th>537</th>
             <td>Vilyuysk</td>
             <td>63.7553</td>
             <td>121.6247</td>
@@ -5984,8 +6526,9 @@
             <td>1618316442</td>
           </tr>
           <tr>
+            <th>538</th>
             <td>Bud</td>
-            <td>39.447</td>
+            <td>39.4470</td>
             <td>-86.1758</td>
             <td>48.99</td>
             <td>86</td>
@@ -5995,6 +6538,7 @@
             <td>1618316442</td>
           </tr>
           <tr>
+            <th>539</th>
             <td>Mama</td>
             <td>58.3106</td>
             <td>112.8986</td>
@@ -6006,21 +6550,23 @@
             <td>1618316443</td>
           </tr>
           <tr>
+            <th>540</th>
             <td>Ust-Kuyga</td>
             <td>70.0167</td>
-            <td>135.6</td>
+            <td>135.6000</td>
             <td>-1.32</td>
             <td>96</td>
             <td>88</td>
-            <td>6.4</td>
+            <td>6.40</td>
             <td>RU</td>
             <td>1618316443</td>
           </tr>
           <tr>
+            <th>541</th>
             <td>Russkiy Aktash</td>
             <td>55.0384</td>
             <td>52.1214</td>
-            <td>68</td>
+            <td>68.00</td>
             <td>42</td>
             <td>0</td>
             <td>2.24</td>
@@ -6028,10 +6574,11 @@
             <td>1618316444</td>
           </tr>
           <tr>
-            <td>TomatlÃ¡n</td>
+            <th>542</th>
+            <td>Tomatlán</td>
             <td>19.9333</td>
-            <td>-105.25</td>
-            <td>63.5</td>
+            <td>-105.2500</td>
+            <td>63.50</td>
             <td>88</td>
             <td>81</td>
             <td>1.74</td>
@@ -6039,6 +6586,7 @@
             <td>1618316444</td>
           </tr>
           <tr>
+            <th>543</th>
             <td>Trincomalee</td>
             <td>8.5711</td>
             <td>81.2335</td>
@@ -6050,10 +6598,11 @@
             <td>1618316242</td>
           </tr>
           <tr>
+            <th>544</th>
             <td>Mandeville</td>
             <td>18.0417</td>
             <td>-77.5071</td>
-            <td>78.8</td>
+            <td>78.80</td>
             <td>83</td>
             <td>40</td>
             <td>6.91</td>
@@ -6061,6 +6610,7 @@
             <td>1618316444</td>
           </tr>
           <tr>
+            <th>545</th>
             <td>Berbera</td>
             <td>10.4396</td>
             <td>45.0143</td>
@@ -6072,6 +6622,7 @@
             <td>1618316445</td>
           </tr>
           <tr>
+            <th>546</th>
             <td>Ziarat</td>
             <td>30.3823</td>
             <td>67.7282</td>
@@ -6083,10 +6634,11 @@
             <td>1618316445</td>
           </tr>
           <tr>
+            <th>547</th>
             <td>Novoanninskiy</td>
             <td>50.5287</td>
             <td>42.6747</td>
-            <td>70.7</td>
+            <td>70.70</td>
             <td>24</td>
             <td>50</td>
             <td>18.84</td>
@@ -6094,20 +6646,22 @@
             <td>1618316446</td>
           </tr>
           <tr>
+            <th>548</th>
             <td>Den Helder</td>
             <td>52.9599</td>
             <td>4.7593</td>
-            <td>46.4</td>
+            <td>46.40</td>
             <td>61</td>
             <td>20</td>
-            <td>11.5</td>
+            <td>11.50</td>
             <td>NL</td>
             <td>1618316446</td>
           </tr>
           <tr>
+            <th>549</th>
             <td>La Paz</td>
-            <td>-16.5</td>
-            <td>-68.15</td>
+            <td>-16.5000</td>
+            <td>-68.1500</td>
             <td>44.38</td>
             <td>76</td>
             <td>74</td>
@@ -6116,20 +6670,22 @@
             <td>1618316427</td>
           </tr>
           <tr>
+            <th>550</th>
             <td>Kaeo</td>
-            <td>-35.1</td>
+            <td>-35.1000</td>
             <td>173.7833</td>
             <td>57.99</td>
             <td>93</td>
             <td>66</td>
-            <td>3</td>
+            <td>3.00</td>
             <td>NZ</td>
             <td>1618316446</td>
           </tr>
           <tr>
+            <th>551</th>
             <td>Shulan</td>
             <td>44.4167</td>
-            <td>126.95</td>
+            <td>126.9500</td>
             <td>32.95</td>
             <td>29</td>
             <td>87</td>
@@ -6138,7 +6694,8 @@
             <td>1618316447</td>
           </tr>
           <tr>
-            <td>MÄngrol</td>
+            <th>552</th>
+            <td>Māngrol</td>
             <td>21.1167</td>
             <td>70.1167</td>
             <td>86.38</td>
@@ -6149,21 +6706,23 @@
             <td>1618316447</td>
           </tr>
           <tr>
+            <th>553</th>
             <td>Challans</td>
             <td>46.8436</td>
             <td>-1.8749</td>
             <td>55.99</td>
             <td>35</td>
             <td>0</td>
-            <td>11.5</td>
+            <td>11.50</td>
             <td>FR</td>
             <td>1618316448</td>
           </tr>
           <tr>
-            <td>SnÃ¥ase</td>
+            <th>554</th>
+            <td>Snåase</td>
             <td>64.2457</td>
             <td>12.3778</td>
-            <td>35.6</td>
+            <td>35.60</td>
             <td>75</td>
             <td>75</td>
             <td>8.05</td>
@@ -6171,8 +6730,9 @@
             <td>1618316448</td>
           </tr>
           <tr>
+            <th>555</th>
             <td>Gizo Government Station</td>
-            <td>-8.103</td>
+            <td>-8.1030</td>
             <td>156.8419</td>
             <td>79.12</td>
             <td>80</td>
@@ -6182,6 +6742,7 @@
             <td>1618316449</td>
           </tr>
           <tr>
+            <th>556</th>
             <td>Diapaga</td>
             <td>12.0708</td>
             <td>1.7889</td>
@@ -6193,9 +6754,10 @@
             <td>1618316449</td>
           </tr>
           <tr>
+            <th>557</th>
             <td>Walla Walla</td>
             <td>46.0646</td>
-            <td>-118.343</td>
+            <td>-118.3430</td>
             <td>30.99</td>
             <td>74</td>
             <td>1</td>
@@ -6204,6 +6766,7 @@
             <td>1618316449</td>
           </tr>
           <tr>
+            <th>558</th>
             <td>Sungai Penuh</td>
             <td>-2.0833</td>
             <td>101.3833</td>
@@ -6215,10 +6778,11 @@
             <td>1618316450</td>
           </tr>
           <tr>
+            <th>559</th>
             <td>Ledyard Center</td>
             <td>41.4398</td>
             <td>-72.0142</td>
-            <td>48</td>
+            <td>48.00</td>
             <td>66</td>
             <td>90</td>
             <td>10.36</td>
@@ -6226,9 +6790,10 @@
             <td>1618316450</td>
           </tr>
           <tr>
+            <th>560</th>
             <td>Lukulu</td>
             <td>-14.3707</td>
-            <td>23.242</td>
+            <td>23.2420</td>
             <td>86.18</td>
             <td>32</td>
             <td>8</td>
@@ -6237,10 +6802,11 @@
             <td>1618316451</td>
           </tr>
           <tr>
-            <td>IÄŸdÄ±r</td>
+            <th>561</th>
+            <td>Iğdır</td>
             <td>39.9237</td>
-            <td>44.045</td>
-            <td>59</td>
+            <td>44.0450</td>
+            <td>59.00</td>
             <td>54</td>
             <td>75</td>
             <td>6.91</td>
@@ -6248,6 +6814,7 @@
             <td>1618316451</td>
           </tr>
           <tr>
+            <th>562</th>
             <td>Obo</td>
             <td>5.3998</td>
             <td>26.4869</td>
@@ -6259,10 +6826,11 @@
             <td>1618316452</td>
           </tr>
           <tr>
+            <th>563</th>
             <td>Bougouni</td>
-            <td>11.417</td>
-            <td>-7.479</td>
-            <td>102.2</td>
+            <td>11.4170</td>
+            <td>-7.4790</td>
+            <td>102.20</td>
             <td>24</td>
             <td>28</td>
             <td>5.59</td>
@@ -6270,19 +6838,21 @@
             <td>1618316452</td>
           </tr>
           <tr>
+            <th>564</th>
             <td>Remontnoye</td>
             <td>46.5614</td>
             <td>43.6501</td>
-            <td>68</td>
+            <td>68.00</td>
             <td>40</td>
             <td>0</td>
             <td>13.42</td>
             <td>RU</td>
             <td>1618316452</td>
-          </tr> 
+          </tr>
         </tbody>
       </table>
-    </div>
+    </section>
+  
   </main>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>

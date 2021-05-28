@@ -1,0 +1,22 @@
+.comparisonarea { 
+    background-color: rgb(255, 255, 255);
+    position: relative;
+    height: 55rem;
+    width: 60rem;
+    border-radius: 2%;
+    padding: 20px;
+    margin: 20px;
+    left: 10rem;
+    right: 0rem;
+    top: 0rem;
+    bottom: 0rem;
+    opacity: 100%;
+    text-align: left;
+    font-size: 13px
+}
+
+.medchartsize {
+    height: 20rem;
+    width: 24rem;
+    margin: 10px;
+}
