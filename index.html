@@ -1,87 +1,88 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Latitude Analysis - Dashboard</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Latitude Analysis - Dashboard</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+  <link rel = "stylesheet" type="text/css" href = "WebVisualizations/assets/global.css">
 </head>
-<body class="bg-secondary">
 
-    <div class="d-flex bd-highlight mb-3 align-items-center bg-light">
-        <!-- Latitude Header for every page -->
-        <div class="me-auto p-2 bd-highlight">
-            <H3 class="p-3 mb-2 bg-info text-white">Latitude</H3>
-        </div>
-        
-        <!-- This defines the nav bar, should be located on every page -->
-        <ul class="nav nav-tabs fs-3 justify-content-end">
-            <li class="nav-item">
-              <a class="nav-link align-middle active" aria-current="page" href="index.html">Home</a>
-            </li>
-            <li class="nav-item dropdown"> 
-              <!-- Not sure if there needs to be a landing page for all of the visualizations -->
-              <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Visualizations</a>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="site_pages/visualizations/max_temperature.html">Max Temperature</a></li>
-                <li><a class="dropdown-item" href="site_pages/visualizations/humidity.html">Humidity</a></li>
-                <li><a class="dropdown-item" href="site_pages/visualizations/cloudiness.html">Cloudiness</a></li>
-                <li><a class="dropdown-item" href="site_pages/visualizations/wind_speed.html">Wind Speed</a></li>
-              </ul>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="site_pages/comparison.html">Comparisons</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="site_pages/data.html">Data</a>
-            </li>
-        </ul>
-
+<body class="bg-secondary"> 
+  <div class="d-flex bd-highlight mb-3 align-items-center bg-light">
+    <!-- Latitude Header for every page -->
+    <div class="me-auto p-2 bd-highlight">
+      <H3 class="p-3 mb-2 text-white tag">Latitude</H3>
     </div>
+        
+    <!-- This defines the nav bar, should be located on every page -->
+    <ul class="nav nav-tabs fs-3 justify-content-end">
+      <li class="nav-item">
+        <a class="nav-link align-middle active navbarstyle" aria-current="page" href="index.html">Home</a>
+      </li>
+      <li class="nav-item dropdown"> 
+        <!-- Not sure if there needs to be a landing page for all of the visualizations -->
+        <a class="nav-link dropdown-toggle navbarstyle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Visualizations</a>
+        <ul class="dropdown-menu">
+          <li><a class="dropdown-item" href="WebVisualizations/site_pages/visualizations/max_temperature.html">Max Temperature</a></li>
+          <li><a class="dropdown-item" href="WebVisualizations/site_pages/visualizations/humidity.html">Humidity</a></li>
+          <li><a class="dropdown-item" href="WebVisualizations/site_pages/visualizations/cloudiness.html">Cloudiness</a></li>
+          <li><a class="dropdown-item" href="WebVisualizations/site_pages/visualizations/wind_speed.html">Wind Speed</a></li>
+        </ul>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link navbarstyle" href="WebVisualizations/site_pages/comparison.html">Comparisons</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link navbarstyle" href="WebVisualizations/site_pages/data.html">Data</a>
+      </li>
+    </ul>
+  </div>
       
-    <main>
-        <section class="bg-light">
-            <H2>Summary: Latitude vs. X</H2>
-            <hr>
-            <!-- REPLACE THIS LATER WITH YOUR ANALYSIS -->
-            <img src="WebVisualizations/visualizations/lat_cloud.png" alt="Latitude X Cloudiness">
-            <p> REPLACE THIS LATER WITH YOUR ANALYSIS The purpose of this project was to analyze how weather changes as you get closer to the equator. To accomplish this analysis, 
-                we first pulled data from the OpenWeatherMap API to assemble a dataset on over 500 cities.
-            </p>
-            <br>
-            <p> REPLACE THIS LATER WITH YOUR ANALYSIS After assembling the dataset, we used Matplotlib to plot various aspects of the weather vs. latitude. Factors we looked at 
-                included: temperature, cloudiness, wind speed, and humidity. This site provides the source data and visualizations created as part of the analysis, as well as 
-                explanations and descriptions of any trends and correlations wit
-            </p>
-        </section>
+  <main>
+    <section class="area1">
+      <H2 class="headerstyle">Summary: Latitude vs. X</H2>
+      <hr>
+      <!-- REPLACE THIS LATER WITH YOUR ANALYSIS -->
+      <img src="WebVisualizations/visualizations/lat_cloud.png" alt="Latitude X Cloudiness">
+      <p> REPLACE THIS LATER WITH YOUR ANALYSIS The purpose of this project was to analyze how weather changes as you get closer to the equator. To accomplish this analysis, 
+        we first pulled data from the OpenWeatherMap API to assemble a dataset on over 500 cities.
+      </p>
+      <br>
+      <p> REPLACE THIS LATER WITH YOUR ANALYSIS After assembling the dataset, we used Matplotlib to plot various aspects of the weather vs. latitude. Factors we looked at 
+        included: temperature, cloudiness, wind speed, and humidity. This site provides the source data and visualizations created as part of the analysis, as well as 
+        explanations and descriptions of any trends and correlations wit
+      </p>
+    </section>
+    
+    <section class="area2">
+      <H3 class="headerstyle">Visualizations</H3>
+          <hr>
+      <!-- Display main visualizations here in a grid -->
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <img class="smallchartsize" src="WebVisualizations/visualizations/lat_cloud.png" alt="Latitude X Cloudiness">
+          </div>
+          <div class="col">
+            <img class="smallchartsize" src="WebVisualizations/visualizations/lat_hum.png" alt="Latitude X Humidity">
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+            <img class="smallchartsize" src="WebVisualizations/visualizations/lat_temp.png" alt="Latitude X Max Temperature">
+          </div>
+          <div class="col">
+            <img class="smallchartsize" src="WebVisualizations/visualizations/lat_wind.png" alt="Latitude X Wind Speed">
+          </div>
+        </div>
+      </div>
+    </section>
 
-        <section class="bg-light">
-            <H3>Visualizations</H3>
-                <hr>
-            <!-- Display main visualizations here in a grid -->
-            <div class="container">
-                <div class="row">
-                  <div class="col">
-                    <img src="WebVisualizations/visualizations/lat_cloud.png" alt="Latitude X Cloudiness">
-                  </div>
-                  <div class="col">
-                    <img src="WebVisualizations/visualizations/lat_hum.png" alt="Latitude X Humidity">
-                  </div>
-                </div>
-                <div class="row">
-                  <div class="col">
-                    <img src="WebVisualizations/visualizations/lat_temp.png" alt="Latitude X Max Temperature">
-                  </div>
-                  <div class="col">
-                    <img src="WebVisualizations/visualizations/lat_wind.png" alt="Latitude X Wind Speed">
-                  </div>
-                </div>
-              </div>
-        </section>
-    </main>
+  </main>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
 
 </body >
 
