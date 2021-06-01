@@ -1,0 +1,20 @@
+.dataheader {
+    color: white;
+    background-color: rgb(94, 178, 176);
+}
+
+.dataarea { 
+    background-color: rgb(255, 255, 255);
+    position: relative;
+    width: 72rem;
+    border-radius: 0.3%;
+    padding: 20px;
+    margin: 20px;
+    left: 10rem;
+    right: 10rem;
+    top: 0rem;
+    bottom: 0rem;
+    opacity: 100%;
+    text-align: left;
+    font-size: 15px
+}
